@@ -2,12 +2,13 @@
 // Automatically ingested feed titles are not reviews and are not editorially classified.
 const escapeText=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','>':'&gt',"'":'&#39;'}[c]));
 const safeHref=x=>{try{const u=new URL(x);return ['https:','http:'].includes(u.protocol)?u.href:'#';}catch{return '#';}};
-let mode='all',dataset=null,automatic=null,loading=null;
+let mode='all',dataset=null,automatic=null,communityLinks=null,loading=null;
 const base=new URL('../macau/',import.meta.url);
 async function pull(){
-  if(!loading)loading=Promise.allSettled(['intelligence.json','live-news.json'].map(n=>fetch(new URL(n,base),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json();}))).then(results=>{
+  if(!loading)loading=Promise.allSettled(['intelligence.json','live-news.json','review-links.json'].map(n=>fetch(new URL(n,base),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json();}))).then(results=>{
     dataset=results[0].status==='fulfilled'?results[0].value:null;
     automatic=results[1].status==='fulfilled'?results[1].value:null;
+    communityLinks=results[2].status==='fulfilled'?results[2].value:null;
   }).finally(()=>{loading=null;});
   await loading;
 }
@@ -26,7 +27,7 @@ function draw(){
   const available=[...manual.map(x=>({...x,automated:false})),...news.map(x=>({...x,automated:true,impact:'neutral'}))].filter(x=>mode==='all'||x.impact===mode).sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0,38);
   const itemList=available.map(x=>story(x,x.automated)).join('')||'<div class="empty">Không có bài phù hợp. Không tự thêm tin giả để đủ số lượng tích cực/tiêu cực.</div>';
   host.innerHTML='<div class="intel-status"><strong>'+manual.length+' tin biên tập · '+news.length+' tin RSS tự động</strong><span>RSS cập nhật: '+escapeText(automatic?.updatedAt?new Date(automatic.updatedAt).toLocaleString('vi-VN'):'chưa chạy hoặc không có kết quả')+'</span></div><div class="intel-feed">'+itemList+'</div>'+
-  '<div class="panel" style="margin-top:25px"><h3>Ý kiến và review người đi thực tế</h3><p class="subtle">Không gán điểm sao giả. Link mở nội dung gốc, không xác minh người viết thực sự đã đến Macau; review mang tính chủ quan và có thể thiên lệch.</p><div class="intel-community">'+(dataset.community||[]).map(x=>'<div class="review-source"><div><strong>'+escapeText(x.title)+'</strong><small>'+escapeText(x.platform)+' · '+escapeText(x.date)+' · Chưa xác minh người viết</small><p>'+escapeText(x.context)+'</p></div>'+anchor(x.url,'Đọc thảo luận')+'</div>').join('')+'</div><h3 style="margin-top:22px">Khám phá nhận xét mới tại nguồn</h3><div class="intel-links">'+(dataset.discovery||[]).map(x=>anchor(x.url,x.title)).join('')+'</div></div>'+
+  '<div class="panel" style="margin-top:25px"><h3>Ý kiến và review người đi thực tế</h3><p class="subtle">Không gán điểm sao giả. Link mở nội dung gốc, không xác minh người viết thực sự đã đến Macau; review mang tính chủ quan và có thể thiên lệch.</p><div class="intel-community">'+(dataset.community||[]).map(x=>'<div class="review-source"><div><strong>'+escapeText(x.title)+'</strong><small>'+escapeText(x.platform)+' · '+escapeText(x.date)+' · Chưa xác minh người viết</small><p>'+escapeText(x.context)+'</p></div>'+anchor(x.url,'Đọc thảo luận')+'</div>').join('')+'</div><h3 style="margin-top:22px">Các đường dẫn thảo luận mới tìm thấy qua RSS</h3><p class="subtle">Kết quả tìm kiếm tự động, không xác minh người viết. Nếu trống thì không có kết quả RSS phù hợp.</p><div class="intel-community">'+(communityLinks?.items||[]).map(x=>'<div class="review-source"><div><strong>'+escapeText(x.title)+'</strong><small>'+escapeText(x.source)+' · '+escapeText(x.date)+'</small></div>'+anchor(x.url,'Kiểm tra nguồn gốc')+'</div>').join('')+'</div><h3 style="margin-top:22px">Khám phá nhận xét mới tại nguồn</h3><div class="intel-links">'+(dataset.discovery||[]).map(x=>anchor(x.url,x.title)).join('')+'</div></div>'+
   '<p class="subtle" style="margin-top:17px">Minh bạch: tin chính thức có thể chưa phản ánh cảm nhận du khách; tin RSS được thu thập tự động, không phải kiểm chứng thực tế hoặc review; một số bài có thể quá hạn hoặc thiếu bối cảnh. Đối chiếu ngày xảy ra sự kiện với ngày đăng.</p>';
   document.querySelectorAll('[data-intel-filter]').forEach(x=>{x.classList.toggle('selected',x.dataset.intelFilter===mode);x.setAttribute('aria-pressed',String(x.dataset.intelFilter===mode));});
 }
