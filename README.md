@@ -1,6 +1,6 @@
 # Travel Notebook — public travel research portal
 
-**Public website (after GitHub Pages is enabled):** https://anatwork14.github.io/travel-repositories/
+**LIVE PUBLIC WEBSITE:** https://travel-repositories.vercel.app/ (automatic GitHub → Vercel deployment).\n\nOptional GitHub Pages URL, once enabled: https://anatwork14.github.io/travel-repositories/
 
 A responsive, Vietnamese-language, city-level travel guide powered by structured destination folders. Starting destination: **Macau, December 2026**.
 
@@ -31,11 +31,11 @@ travel-repositories/
 
 For large countries, follow `japan/tokyo/`, `japan/osaka/` etc. Macau is a city-sized Special Administrative Region, so a single top-level `macau/` folder suffices. To add another destination, create a new dataset following the Macau schema and extend the renderer/routing registry in `assets/app.js`. **Adding a folder without registering it is not enough.**
 
-## Deploy with GitHub Pages
+## Public deployment (Vercel)\n\nThe repository is linked to Vercel project `travel-repositories` on `main`. Each GitHub push deploys to **https://travel-repositories.vercel.app/**. The production deployment is READY and has no Vercel SSO or password protection.\n\n## Optional: Deploy with GitHub Pages
 
 1. Open this repository → **Settings** → **Pages**.
 2. Under **Build and deployment**, set **Source: GitHub Actions**.
-3. Open **Actions → Publish travel website** to check the deployment, or manually run it if needed.
+3. Open **Actions → Publish travel website to GitHub Pages** to check the deployment, or manually run it if needed.
 4. Once the deployment shows **success**, visit https://anatwork14.github.io/travel-repositories/ and https://anatwork14.github.io/travel-repositories/macau/.
 
 This repository is public, but **a code commit is not proof that GitHub Pages is live**. GitHub Pages may need manual activation by the repository owner.
