@@ -18,3 +18,5 @@
 @media (max-width:900px){.guide-layout{grid-template-columns:1fr}.intel-feed{grid-template-columns:1fr}.guide-map{height:360px}}
 @media (max-width:600px){.guide-leg{margin-left:12px;padding-left:12px;flex-wrap:wrap}.guide-stop{padding:14px}.guide-add{flex-direction:column}.review-source{align-items:start;flex-direction:column;gap:8px}.intel-card{padding:17px}}
 @media print{header,.tabs-shell,footer,.guide-toolbar,.guide-buttons{display:none!important}}
+
+.guide-stop-body .guide-story{margin:10px 0;padding:12px 14px;background:#f1f6f0;border-left:3px solid #cfa15f;color:#34594a;font-size:13px;line-height:1.65;border-radius:0 10px 10px 0}
