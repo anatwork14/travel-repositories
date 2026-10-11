@@ -66,7 +66,7 @@ export function activateGuide(data){
  const rerender=()=>{root.innerHTML=renderGuide(data);activateGuide(data);};
  root.querySelectorAll('[data-guide-day]').forEach(b=>b.addEventListener('click',()=>{day=Number(b.dataset.guideDay);rerender();}));
  document.getElementById('guide-mode').addEventListener('change',e=>{travelMode=e.target.value;repaint(data);});
- root.addEventListener('click',e=>{
+ root.onclick=e=>{
  const target=e.target.closest('[data-guide-visit],[data-guide-move],[data-guide-remove],[data-guide-export],#guide-add,#guide-reset');if(!target)return;
  if(target.hasAttribute('data-guide-visit')){const id=target.dataset.guideVisit;if(visited.has(id))visited.delete(id);else visited.add(id);persist();repaint(data);}
  if(target.hasAttribute('data-guide-remove')){plan[day]=plan[day].filter(id=>id!==target.dataset.guideRemove);persist();repaint(data);}
@@ -80,6 +80,6 @@ export function activateGuide(data){
    if(type==='json')download('macau-itinerary.json',JSON.stringify({city:data.name,updated:data.updated,days:plan,waypoints:data.spots.filter(s=>[1,2,3].some(k=>plan[k].includes(s.id)))},null,2),'application/json');
    if(type==='copy'){const content=exportText(data);if(navigator.clipboard?.writeText)navigator.clipboard.writeText(content).then(()=>{const p=document.getElementById('guide-status');if(p)p.textContent='Đã sao chép hành trình.';}).catch(()=>{document.getElementById('guide-status').textContent='Không có quyền clipboard; dùng tải HTML.';});else document.getElementById('guide-status').textContent='Clipboard không được hỗ trợ.';}
  }catch(err){document.getElementById('guide-status').textContent='Xuất dữ liệu không thành công: '+err.message;}}
- });
+ };
  repaint(data);
 }
