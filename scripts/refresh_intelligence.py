@@ -29,7 +29,7 @@ NEWS_FEEDS = [
 ]
 # Google News returns search links, not verified traveler reports; source links are only discovery.
 COMMUNITY_SEARCH = "https://news.google.com/rss/search?q=site%3Areddit.com%2Fr%2FMacau%20travel%20experience%20when%3A30d&hl=en-US&gl=US&ceid=US:en"
-RELEVANT = re.compile(r"maca[ou]|touris|visitors|travel|heritage|festival|concert|cultur|museum|transport|hotel|visa|police|fraud|scam|typhoon|weather|holiday|light up", re.I)
+RELEVANT = re.compile(r"touris|visitor|travel|heritage|festiv|concert|cultur|museum|transport|hotel|visa|police|fraud|scam|typhoon|storm|weather|holiday|light up|fireworks|airport|ferry|road closure|traffic|consumer|safety|security|exhibition|gastronom", re.I)
 VALID_PROTOCOL = {"https", "http"}
 
 
