@@ -1,0 +1,54 @@
+name: Chia sẻ trải nghiệm du lịch
+description: Góp ý cả điểm tích cực lẫn tiêu cực — không quảng cáo và không ép buộc chấm sao.
+title: '[Trải nghiệm] Macau — '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã đóng góp. Đây là ý kiến cá nhân, không mặc nhiên được xem là đánh giá đã xác minh. Nội dung có thể công khai trên GitHub; xin đừng gửi số hộ chiếu, thông tin tài chính, số điện thoại, tên người khác hay dữ liệu nhạy cảm.
+  - type: dropdown
+    id: destination
+    attributes:
+      label: Thành phố
+      options:
+        - Macau
+    validations:
+      required: true
+  - type: input
+    id: visit-month
+    attributes:
+      label: Thời gian đi (tháng/năm)
+      placeholder: 12/2026
+    validations:
+      required: true
+  - type: input
+    id: place
+    attributes:
+      label: Địa điểm / quán / khách sạn (nếu có)
+      placeholder: Ví dụ: Taipa Village
+  - type: textarea
+    id: positives
+    attributes:
+      label: Điều tốt / trải nghiệm tích cực
+      description: Vui lòng kể các chi tiết bạn trực tiếp quan sát.
+    validations:
+      required: true
+  - type: textarea
+    id: negatives
+    attributes:
+      label: Điều chưa tốt / rủi ro / hạn chế
+      description: Nêu cả những việc không xảy ra hoặc bạn chưa biết nếu cần.
+    validations:
+      required: true
+  - type: textarea
+    id: costs
+    attributes:
+      label: Giá thực tế, thời điểm, đơn vị tiền
+      description: Ghi là bạn tự thanh toán, thấy menu hay nghe người khác nói.
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Xác nhận
+      options:
+        - label: Tôi hiểu bài đăng công khai, là chia sẻ chủ quan và có thể được biên tập bằng cách dẫn link hoặc tóm tắt có ghi nguồn.
+          required: true
