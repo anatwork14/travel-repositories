@@ -1,7 +1,219 @@
 {
-  "updatedAt": null,
-  "sourceCount": 0,
-  "items": [],
+  "updatedAt": "2026-10-11T16:54:05+00:00",
+  "lastAttemptAt": "2026-10-11T16:54:05+00:00",
+  "sourceCount": 4,
+  "items": [
+    {
+      "date": "2026-10-11",
+      "title": "Macao and the Philippines ink new bilateral Air Services Agreement and Memorandum of Understanding, significantly relaxing capacity limits and fully opening fifth freedom rights for cargo operations",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JKLhiQt",
+      "source": "Macao SAR Government · English news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "CE: 2027 Policy Address to cover areas of public concern and advance Macao’s Third Five-Year Plan",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JJ0VpTm",
+      "source": "Macao SAR Government · English news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "Talent Development Committee hosts talent exchange event, signs memoranda of understanding with Macao International Technology Industry Centre and Zhukuan Group to jointly build a hub for high-calibre talent",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JIZfZLz",
+      "source": "Macao SAR Government · English news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "Cutting-edge tech powers smart National Day travel in China - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQLUZFMmpXWUtCMi1SbFQzUm5vUGJfa2FSZUhCdk1OMklNeUhWZDNSbVltNTBES2UzQTJCMXRidUUzOGdDWkNfQTRBakJKeGFLWGwtb0tQdGNyeW5BNFRvb3I4OF9SU29DN2hRQjItVXNiRk9HTjh5bnZ2d3FYNTVYdXB2U0xReE9OSjhLOUI3OA?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Holiday travel, spending boom mirror vitality of China’s vast market - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVXk4UGp3R2NlcGdFaUJQM3E4Rk5WUWc2YnNVZ0otbHJKWDdTSURFTW1MVVdTVDFVM2lCSlVHdlB0bmstWDVrN1lOTFlWY1R6UTVoZ2VCa1BBUVJfMldCcVRYdzFxWGZsREIyU1B1S2N3OWlXM051R0J3VVczbnhTLVo1bF9mb3FWTHFyUjJFdEFvQURSMlpCUg?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "“hush! Beach Concerts x Urban Sports Wellfest 2026” creates a new cultural and tourism experience in music and sports for youth in November",
+      "url": "http://www.icm.gov.mo/en/news/detail/25132",
+      "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "WTTC Global Summit opens in Malta with focus on tourism growth - TTG Asia",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeG9Bcks1ektkYlJmS0poWWlMU29CUm4zLWhJTkd4cHhaU0xKUW5YSzJRa3VjanVwUTByc1ZZQUxPQ0l6ZjRwR2EyZjNQVlFCMEs0VlNyMFVoV0lPMXRON251VkpFRm93VTB3aDc3bE9hMTNZOWh2M0pXZFAyVU00VzlRQ2UwcWdXTkxINE1HTTN6ckNzY1hRd0ZfWGVfYmc?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Concrete Songs and Other Stories",
+      "url": "http://www.icm.gov.mo/en/events/detail/11890",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Global Tourism Economy Forum returns to Macao - TTG Asia",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQc1ZSdUNMTUd0M2h3MG9ScFlsc0VqZ0pvbWFsMTdYNHdkZ1Qtcm5VSHpnVXdWV09Wc3FoRFhnX0RBTWFkS0JzZV9XWW9QYmlFc2p4NG9Wd2lMcUF2THhuSnR4YkJDdjF2ZnplVndieFhVZk9nZlNleTc0eGlxOXphM3U5TUExSWdv?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "JTB and Taiwan-based travel tech work together to establish a cross-border digital base for local activities in Japan - トラベルボイス｜観光産業ニュース",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUWJnckJPY3BNdDVSTFVmZjhYb01FT3lod2FMY1FJWkRidnhBaHFRdFlXeGhZWHlDRmhWcC0wUGJnQzJsb29yWE1NMHFkRXFqeXgydGl6aWMtb21WZi1TMVgyYmhpY0xtc3pCSTNBZ1c3cGxycXBELTkyNUJYSS1scVp4M3pkUVh5VV9yNUNJcDVXWWpueExaa1RDX2Z2eElTVVZGbDFmeWU1ZkpvZ1hvYjhPdy1nR29OX2hna3A5a2dtbVpidmcyQWxyTkZNVUpPanJhNk1qUE1razNROXgtZHRBSVk4VjA?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "China’s railways see holiday return peak amid vibrant tourism market - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWXpuU1loakgtODYxWGxvTFVnVHcxX0UwQ0ZUaDE5QWhjN2QxY0ZjWEk0cHllNkhWQWJXYkk4Y1FLX2hNQmtETzFCNG5hTm5XazZkaHZ0N1Z0N1JpRW1RTm1EV3JZR2F6NS1NWHhtdmRtVDNRVnBueVFuaGlvU05oRDVZUDh4YWlIMmV6SnlDZjdIdG5VUk9fT1hB?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Brazilian Body Beats",
+      "url": "http://www.icm.gov.mo/en/events/detail/11888",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "38th Macao International Music Festival presents “Brazilian Body Beats” at the Macao Cultural Centre Grand Auditorium",
+      "url": "http://www.icm.gov.mo/en/news/detail/25125",
+      "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Cultural Affairs Bureau continues to promote various reading activities in the community",
+      "url": "http://www.icm.gov.mo/en/news/detail/25122",
+      "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Macao, Hainan explore multi-stop tourism products - TTG Asia",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQlQ5b0x5bXpxRHQ0blpYUG1neWZTMUIwWG1QWWtmWDhqSlpzSXJaelVnVk5QMGxPTVhtbnNmTnQ0bk84LWRad0xDUjA1RTN6TzVpQ2ttLUR0a3Bna3ZVVk93cFlWNVNDdTl3RC1tSnYwTl8xempETm02bjM2UmlDa3JSR3k2VkdLM2xHbg?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Longer trips, richer experiences: China’s National Day holiday reveals shifting tourism trends - The Macau Post Daily",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBjSjNoNE1DZDhyZHA4THI0TGt2eUNqSFdyZDZwSDVSR2F5LXg4V3dsMmJmMGFOdlBHV2dSc3F3S050Ymh6MU1xbVhYMjctZw?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Festive events fuel travel surge in Greater Bay Area - chinadailyhk",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uRFRsSmdLRkVWV1ZGUGZSN3NlVzVtZ3J0YUtBRVlmeXpWbU81Q3NfZVRLYjNJdXFvcEN5Nk1qa242NW9kMk4xQ01NdmNtWjh2ZjYxVy1KbHpWdw?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "Travel restrictions for people with HIV - Aidsmap",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE52NTZMdklLUldFV182YXVwWDJ3bno3UWVFaGVEVXJ1Q0V6a0hZWjBkS3dCaGZiaEtVQ01RRGtkVzB2SFZwUXdrcWZNT3pfNEJvOTZrRVVqX3hZUmJ6ck1DUm9OVHJjMjFTNXFHYTItRUp6Zw?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "38th Macao International Music Festival grandly inaugurated",
+      "url": "http://www.icm.gov.mo/en/news/detail/25117",
+      "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Discovering Indonesia Through Experiences Beyond the Ordinary - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM2xLNWJnbWN1UHFYbXExMW5BRmM4cnpXMkpmV0I1Um4ydkl1WDFhelFkNUpHNDJTcUJna2tIT28tckN4U283MGl5dHJvaVByamJOQzhDaDc5WHhhc2R3UC01SzZreWJxVmd6YjhrMnJ2ZzBuVGhRN2xnY2JQakxrWXIycVNBNjRxVUptYS1oV09Kdw?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Grand Opening\nMy Grand View Garden – Yue Opera",
+      "url": "http://www.icm.gov.mo/en/events/detail/11881",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Crisis • Resilience • Evolution -- Building a Tourism Economy for a Shared Future - PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQmsxVDVyN0xuMFB4TzYxamhWM3ZZaVdpYmN1UnZsVnlhOF9uR3ZaR3pQSDJTS3NHVW9YMElPVWUtMmhHZjM4WkVGajlBTXpmdWhNcXdiNDhpdGM5TnhUUVU0VWs1ZzFNSERvMmc1OG9OalVvX0NvMURWWlA1S3h1ODg1ck8wRHdMM3RwVE9oV3hYclFJTlNwZ2ZuNklSWkVWRWlEOElWaXdEQUcyV09LMEQ2SjlPU3pGMWhmTWxyaGkwRmEwblFNR1ZjQ1U2bHowa2pHOQ?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Macao, Hainan explore multi-stop travel itineraries - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb3ZIR25KY216S0lwZHhTbDNBRUtxMjg1VDZMUE5iQUlfbXBtSVoyYUtfRkR0c2QyU25vLWJYT1lSdjM1TWhtOEU1Q0Q4d2hwbDNhSlI1LWo3N3V4VWx4cmRYR2tReU5VWE5nb3lIV1cyN2Q5NGNfR0dwdDZ5d0VTNDhpdw?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "【National Day Golden Week】MGTO rolls out active preparations to ensure service quality and show dynamic destination appeal - MACAO GOVERNMENT TOURISM OFFICE - www.dst.gov.mo",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOG12SENabUpPWkZoem5VOWdCZTRrVHRIMlJScDBNRUVTSk96UkY3Wkp4c1BGMFpOZjRMNHBDQ0JaX1RzR1ozRnB1WmRKQnB4UTJjV1ZsSkFQZm90dER5RWdTbDJkZjRzdU1PclY2UThmRl92eWVkX21tZUx4X3JOUzdVWVhVbVdVYjR2alhKZw?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Macau authorities expect 5.4 million border crossings during seven day National Day Golden Week holiday - Inside Asian Gaming",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOM1BsS0VtUmdmeUtzNDBmVHVVWE1qcEJqa3lyZnV0UmhqanJYWGxVRUZSNVhkWTRVczkyelh6VGI0MUliN0JiRWR0eEt1TGs0bW8tQUhXeG5nc2tCcWh6SFFBMk5rZXdtbmZDbURlLUdEdWloOG5SMzZvWk1rbE14dl82SzNWbXZKOHYwUU03VmF3OS0xSXNMMHpabm10RlhkcW1pbTBqSW9XMGN2TUdyZmtmaDZES050UFBZZm5FU2RuYklnU0FmYXozaGZpdw?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "'Where Culture Flourishes, Happiness Happens'\nFlash Mob in the Community",
+      "url": "http://www.icm.gov.mo/en/events/detail/11927",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Lang Lang – Beyond Boundaries Series\nPiano Camp",
+      "url": "http://www.icm.gov.mo/en/events/detail/11913",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "'Where Culture Flourishes, Happiness Happens'\nPiano Around Town",
+      "url": "http://www.icm.gov.mo/en/events/detail/11922",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "'Where Culture Flourishes, Happiness Happens'\nStreet Eco-Percussion",
+      "url": "http://www.icm.gov.mo/en/events/detail/11920",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Sailing Melodies Shining in Macao: Yip's Children's Choir Concert",
+      "url": "http://www.icm.gov.mo/en/events/detail/11929",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    }
+  ],
   "errors": [],
-  "notice": "Feed chưa được chạy. Các bài có kiểm chứng thủ công vẫn được hiển thị riêng."
+  "notice": "Chỉ tiêu đề + link RSS, không đánh giá đúng sai, không phân loại cảm xúc. Không coi đây là review người dùng."
 }

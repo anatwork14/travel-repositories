@@ -1,5 +1,48 @@
 {
-  "updatedAt": null,
-  "items": [],
-  "notice": "Tự động khám phá đường dẫn review sẽ chạy sau khi GitHub Actions thu thập RSS."
+  "updatedAt": "2026-10-11T16:54:05+00:00",
+  "items": [
+    {
+      "date": "2026-10-11",
+      "title": "Hong Kong Macau queries - Reddit",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1Qa2x2aEktR2g0RFI4MEtkWjF0QURscTZfNVp2dExpVUMzc1lnMmt2T0l2c1lvb3hKUV8wQWVva3JQbzlvY2ZPRnZXSHRiYzlEY2c1aXAwZUVpSkVzN2pETWZVcTRMZ2hKMGNlbzBFMzhsejRQSExEaXpDNV8?oc=5",
+      "source": "Google News index · Reddit discussion search",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "Payments in Macau - Reddit",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56dnVoTDNJQjd2MWlUUnBrVHAxdkFqTHZGWEk1LVJhWEVxbW9WdHZGODR2VnRqX0RxdFRIMnJQbWtaYklyZ3hTVXlHMGt3T1NiMmplV3dBNF95RVIta2VxUGlwMTRpVkdOTlg4Z0lqcFFVNURl?oc=5",
+      "source": "Google News index · Reddit discussion search",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "How to get to Outer Harbour Ferry Terminal, Macau from ShenZhen Airport Ferry Terminal - Reddit",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTlNlWDFLZmhnOTBXQk9iQWtkNUNYcEZkTjhqdDdVQnhIZ183M2tDZjcyU3hjS0E2bXpCLWthWFpXM1U0M19KUWk3Y2xlZlRkVVVKVTNsc09zTGEwLWh0aE1OY3VkblUtcExUNlMzVDhncURtNkgyYkRsYU9GYnUydk0yMGxqRDh1c2JyTlgtN1NqWjRKWnpIMHdwQ21SQQ?oc=5",
+      "source": "Google News index · Reddit discussion search",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "is grab/taxi available in macau esp coloane village? is it 24/7? - Reddit",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUUtieVhsLURvNzNCaE43Qld0Nm5ucDNlMzJwZFU3M09TR25uRTB1RzJYakpnTmMxUVBmVWFBQTM5dmNTTUpTdUd6dF9Tb0tGTmMyVE4xdjVqRE5aS29XVldpWUxuODQ4cVZvdFlEWGFhd3d6QTRlWTNPUC1oRmtIRnY2ejhfYWR2OVB4RlhPVEI1THF2SlE?oc=5",
+      "source": "Google News index · Reddit discussion search",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Need Help,Metropole Hotel - Reddit",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1WbTZYaFRDZlh4OTcxU1g5LUNka3pieWNwaVJuUUxWZ1pHNUJTZGp3M21SN0tIeC1hY3dFUjJsYS1uZWpmMXRjeXVEVkg3OWlVVHJ5cTRsZkl5a3VaSjBhVWhfZC14Mk5hdTFBUFl4MGxTYzV0dDZhZEF6UVUzZw?oc=5",
+      "source": "Google News index · Reddit discussion search",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Is it smarter to stay in Zhuhai or Macau for the Macau trip? - Reddit",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQ1duUjQzajA2ekY3bUNTNncxaTdqam1IMWIwdHJEQWtrQXRHeHdlRmh2NGxnMEx1NXdoeWNoaVNyNklNR1pzZjVxNTBxeHV4MkJqRjJtR1ZjR1U3NVJ1cHZFNU16Z2h3U19JUG9VeUk3MFlWczZUZGoweE5oVWh3eGdEVGdnSUlkUWdHQ2NUV3BvbF9mbXlGX2RROEJBUQ?oc=5",
+      "source": "Google News index · Reddit discussion search",
+      "kind": "RSS headline"
+    }
+  ],
+  "notice": "Chỉ mục bài thảo luận tìm thấy qua RSS; không xác thực tác giả hay trải nghiệm. Không sao chép đánh giá."
 }
