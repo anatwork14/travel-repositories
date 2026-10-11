@@ -38,7 +38,7 @@ const stages=[
 {id:"after",name:"Sau chuyến đi",hint:"Lưu kỷ niệm & góp ý"}
 ];
 const LS="travel-notebook-global-prep-v2";
-let viewStage="all",uncompleted=false,checkState={done:{},custom:[],trip:{destination:"",depart:"",kind:"international"}};
+let viewStage="research",uncompleted=false,checkState={done:{},custom:[],trip:{destination:"",depart:"",kind:"international"}};
 try{const raw=JSON.parse(localStorage.getItem(LS)||"null");if(raw&&typeof raw==="object"){checkState.done=raw.done||{};checkState.custom=Array.isArray(raw.custom)?raw.custom.slice(0,40):[];checkState.trip={...checkState.trip,...(raw.trip||{})};}}catch{}
 const html=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function persist(){try{localStorage.setItem(LS,JSON.stringify(checkState));}catch{}}
@@ -48,6 +48,7 @@ function renderRows(){
  const all=tasks(),shown=all.filter(x=>(viewStage==="all"||x.stage===viewStage)&&(!uncompleted||!checkState.done[x.id]));
  const completed=all.filter(x=>checkState.done[x.id]).length;
  const pct=all.length?Math.round(100*completed/all.length):0;
+ const dateHint=document.querySelector("#prep-date-hint");if(dateHint){const date=checkState.trip.depart;let msg="Chọn ngày khởi hành để thấy thời gian còn lại.";if(/^\d{4}-\d{2}-\d{2}$/.test(date)){const diff=Math.ceil((new Date(date+"T00:00:00").getTime()-new Date(new Date().toDateString()).getTime())/86400000);msg=diff<0?"Ngày khởi hành đã qua. Bạn có thể cập nhật ngày mới.":diff===0?"Hôm nay là ngày khởi hành — ưu tiên giấy tờ và di chuyển.":"Còn "+diff+" ngày đến chuyến đi · "+(diff<=2?"kiểm tra nhóm 24–48 giờ cuối.":diff<=7?"ưu tiên nhóm Trước 1–4 tuần và 24–48 giờ cuối.":"hãy ưu tiên giấy tờ, đặt chỗ và chuẩn bị theo giai đoạn.");}dateHint.textContent=msg;}
  const summary=document.querySelector("#prep-summary");
  if(summary)summary.innerHTML='<strong>'+completed+' / '+all.length+' việc hoàn thành</strong><span>'+pct+'%</span>';
  const bar=document.querySelector("#prep-progress");if(bar)bar.style.width=pct+"%";
@@ -58,7 +59,7 @@ function renderRows(){
 export function renderPrep(){
  return '<section class="prep-section" id="trip-checklist"><div class="container"><div class="prep-top"><div><div class="eyebrow">YOUR TRAVEL WORKSPACE</div><h2>Chuẩn bị tốt.<br><em>Đi thật thoải mái.</em></h2><p class="intro">Checklist dùng được cho mọi điểm đến. Chia theo giai đoạn để bạn không bỏ sót việc quan trọng nhưng vẫn tận hưởng chuyến đi.</p></div><div class="prep-note">✓ Không cần tài khoản<br>✓ Lưu ngay trên thiết bị<br>✓ Không thu thập số hộ chiếu</div></div>'+
  '<div class="prep-box"><div class="prep-fields"><label>Đi đâu? <input id="prep-destination" maxlength="100" placeholder="Ví dụ: Tokyo, Đà Lạt…" value="'+html(checkState.trip.destination)+'"></label><label>Ngày khởi hành <input id="prep-depart" type="date" value="'+html(checkState.trip.depart)+'"></label><label>Loại hành trình <select id="prep-kind"><option value="international" '+(checkState.trip.kind==="international"?"selected":"")+' >Quốc tế</option><option value="domestic" '+(checkState.trip.kind==="domestic"?"selected":"")+' >Nội địa</option></select></label></div>'+
- '<div class="prep-status"><div id="prep-summary" class="prep-summary" aria-live="polite"></div><div class="prep-track"><div id="prep-progress"></div></div></div>'+
+ '<p class="prep-date-hint" id="prep-date-hint" role="status"></p><div class="prep-status"><div id="prep-summary" class="prep-summary" aria-live="polite"></div><div class="prep-track"><div id="prep-progress"></div></div></div>'+
  '<div class="prep-filter"><div class="prep-pills" role="group" aria-label="Giai đoạn chuẩn bị"><button class="chip selected" data-prep-stage="all" aria-pressed="true">Tất cả</button>'+stages.map(x=>'<button class="chip" data-prep-stage="'+x.id+'" title="'+x.hint+'">'+x.name+'</button>').join("")+'</div><button type="button" id="prep-pending" class="chip" aria-pressed="false">Chỉ việc chưa xong</button></div>'+
  '<div id="prep-tasks" class="prep-tasks"></div>'+
  '<form id="prep-custom" class="prep-custom"><label for="prep-new">Thêm việc cá nhân</label><div class="prep-add"><input id="prep-new" maxlength="130" required placeholder="Ví dụ: kiểm tra lịch tàu về khách sạn"><button type="submit" class="pill">+ Thêm việc</button></div></form>'+
@@ -69,7 +70,7 @@ export function bindPrep(){
  root.addEventListener("change",e=>{
   if(e.target.matches("[data-prep-check]")){checkState.done[e.target.dataset.prepCheck]=e.target.checked;persist();renderRows();}
   if(e.target.id==="prep-kind"){checkState.trip.kind=e.target.value;persist();renderRows();}
-  if(e.target.id==="prep-depart"){checkState.trip.depart=e.target.value;persist();}
+  if(e.target.id==="prep-depart"){checkState.trip.depart=e.target.value;persist();renderRows();}
  });
  root.querySelector("#prep-destination").addEventListener("input",e=>{checkState.trip.destination=e.target.value;persist();});
  root.addEventListener("click",e=>{
@@ -83,6 +84,6 @@ export function bindPrep(){
    const blob=new Blob([content],{type:"text/plain;charset=utf-8"});const link=document.createElement("a");link.href=URL.createObjectURL(blob);link.download="travel-preparation-checklist.txt";link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);
   }
  });
- root.querySelector("#prep-custom").addEventListener("submit",e=>{e.preventDefault();const el=root.querySelector("#prep-new");const value=el.value.trim();if(!value||checkState.custom.length>=40)return;checkState.custom.push({id:"c"+Date.now().toString(36),stage:"research",label:value,detail:"Công việc do bạn thêm.",custom:true});el.value="";persist();viewStage="all";uncompleted=false;renderRows();});
+ root.querySelector("#prep-custom").addEventListener("submit",e=>{e.preventDefault();const el=root.querySelector("#prep-new");const value=el.value.trim();if(!value||checkState.custom.length>=40)return;checkState.custom.push({id:"c"+Date.now().toString(36),stage:"research",label:value,detail:"Công việc do bạn thêm.",custom:true});el.value="";persist();viewStage="research";uncompleted=false;renderRows();});
  renderRows();
 }
