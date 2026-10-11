@@ -1,0 +1,32 @@
+name: Validate travel site
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/app.js
+          node --check macau/data.js
+      - name: Validate static document and navigation
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          root=Path(".")
+          checks={
+            "index.html": ['data-page="home"', './assets/app.js', './assets/site.css'],
+            "macau/index.html": ['data-page="city"', '../assets/app.js', '../assets/site.css'],
+            "macau/data.js": ["export const macau", "spots:", "foods:", "hotels:", "cautions:", "sources:"],
+            "assets/app.js": ["const tabs=", "renderMap", "renderPrices", "renderRisks"],
+          }
+          for name, phrases in checks.items():
+            content=(root/name).read_text(encoding="utf-8")
+            for phrase in phrases: assert phrase in content, (name, phrase)
+          print("Source modules and public paths verified")
+          PY
