@@ -1,0 +1,96 @@
+{
+  "editorialUpdated": "2026-10-11",
+  "methodology": "Nhãn cơ hội/cảnh báo mô tả tác động có thể có lên người đi du lịch, không phải đánh giá chính trị hay khẳng định mọi du khách đều gặp tình trạng đó. Tin RSS tự động chưa kiểm chứng độc lập.",
+  "stories": [
+    {
+      "id": "light-up",
+      "date": "2026-10-11",
+      "title": "Light Up Macao 2026: lịch 5/12–10/1/2027 đã công bố",
+      "summary": "Lễ hội ánh sáng dự kiến diễn ra đúng mùa du lịch tháng 12; cần kiểm tra địa điểm và giờ hoạt động theo từng chương trình trước khi đi.",
+      "impact": "positive",
+      "kind": "Sự kiện",
+      "source": "Macao Government Tourism Office",
+      "url": "https://www.macaotourism.gov.mo/en/events/calendar",
+      "status": "Lịch đã công bố"
+    },
+    {
+      "id": "music-2026",
+      "date": "2026-10-02",
+      "title": "Liên hoan Âm nhạc Quốc tế Macau diễn ra đến 29/11",
+      "summary": "Có 10 chương trình biểu diễn và các hoạt động nghệ thuật trong thành phố; hữu ích cho người đi Macau vào tháng 10–11, nhưng sẽ kết thúc trước tháng 12.",
+      "impact": "positive",
+      "kind": "Văn hóa",
+      "source": "Cultural Affairs Bureau",
+      "url": "https://www.icm.gov.mo/en/news/detail/25117",
+      "status": "Đang diễn ra"
+    },
+    {
+      "id": "golden-week-2026",
+      "date": "2026-10-08",
+      "title": "Macau đón hơn 1,14 triệu lượt khách dịp Golden Week",
+      "summary": "Từ 1–7/10: khoảng 1,143 triệu lượt khách, trung bình hơn 163 nghìn lượt mỗi ngày, cho thấy sức hút du lịch tăng. Dữ liệu không dự báo trực tiếp mức đông tháng 12.",
+      "impact": "positive",
+      "kind": "Thống kê",
+      "source": "Macao Government Tourism Office",
+      "url": "https://www.dst.gov.mo/en/about-us/press-release/f307b2aac30c496b95e272efe83328f3.html",
+      "status": "Số liệu sơ bộ"
+    },
+    {
+      "id": "golden-week-crowds",
+      "date": "2026-10-08",
+      "title": "Tỷ lệ kín phòng vượt 91% dịp 1–7/10: lưu ý cuối tuần/lễ",
+      "summary": "Cùng báo cáo ghi nhận tỷ lệ lấp đầy phòng trung bình hơn 91,3%. Đây là dữ liệu kỳ Golden Week, không phải báo giá hay dự báo tháng 12; nên đặt phòng có thể hủy sớm.",
+      "impact": "risk",
+      "kind": "Chi phí & đông khách",
+      "source": "Macao Government Tourism Office",
+      "url": "https://www.dst.gov.mo/en/about-us/press-release/f307b2aac30c496b95e272efe83328f3.html",
+      "status": "Số liệu sơ bộ"
+    },
+    {
+      "id": "police-oct",
+      "date": "2026-10-09",
+      "title": "Cảnh sát Macau nhắc du khách cảnh giác móc túi và đổi tiền lậu",
+      "summary": "Thông báo phòng ngừa tại cửa khẩu, các điểm tham quan và khu resort. Khuyến nghị giữ túi phía trước và chỉ đổi tiền qua kênh hợp pháp. Đây là cảnh báo phòng ngừa, không chứng minh tội phạm đang tăng.",
+      "impact": "risk",
+      "kind": "An toàn",
+      "source": "Macau Judiciary Police / gov.mo",
+      "url": "https://www.gov.mo/zh-hant/news/1272665/",
+      "status": "Cảnh báo chính thức"
+    },
+    {
+      "id": "christmas-2026",
+      "date": "2026-10-11",
+      "title": "Ngày nghỉ tháng 12: 8, 20, 22 và 24–25/12",
+      "summary": "Lịch nghỉ công bố cho năm 2026. Một số dịch vụ hoặc cửa hàng có thể đổi giờ hoạt động; không tự suy luận nơi nào sẽ đóng cửa.",
+      "impact": "risk",
+      "kind": "Lịch & logistics",
+      "source": "Macao SAR Government",
+      "url": "https://www.gov.mo/en/public-holidays/year-2026/",
+      "status": "Lịch chính thức"
+    }
+  ],
+  "community": [
+    {
+      "title": "Thảo luận về ngày dễ đông trong các dịp lễ Macau",
+      "date": "2026-08-20",
+      "platform": "Reddit / r/Macau",
+      "context": "Người dùng trao đổi ý kiến khác nhau về dịp đông khách; không phải dự báo được kiểm chứng. Mở bài gốc để đọc cả ý kiến trái chiều.",
+      "url": "https://www.reddit.com/r/Macau/comments/1vtmvyq/crowd_dates/",
+      "verified": false
+    }
+  ],
+  "discovery": [
+    {
+      "title": "Tìm bài trải nghiệm mới của cộng đồng r/Macau",
+      "url": "https://www.reddit.com/r/Macau/search/?q=travel%20experience&restrict_sr=1&sort=new"
+    },
+    {
+      "title": "Đọc đánh giá trực tiếp trên Google Maps",
+      "url": "https://www.google.com/maps/search/?api=1&query=Macau+tourist+attractions"
+    },
+    {
+      "title": "Tham khảo review và ảnh của khách trên Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g664891-Macau-Vacations.html"
+    }
+  ]
+}
