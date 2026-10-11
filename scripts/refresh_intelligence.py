@@ -26,6 +26,7 @@ NEWS_FEEDS = [
     ("Cultural Affairs Bureau · news", "https://www.icm.gov.mo/rss/files/rssNews_E.xml"),
     ("Macao SAR Government · English news", "https://govinfohub.gcs.gov.mo/api/rss/n/en"),
     ("Google News · Macau travel coverage", "https://news.google.com/rss/search?q=Macau%20tourism%20travel%20when%3A14d&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News · Macau safety and transport", "https://news.google.com/rss/search?q=Macau%20tourist%20safety%20scam%20transport%20when%3A30d&hl=en-US&gl=US&ceid=US:en"),
 ]
 # Google News returns search links, not verified traveler reports; source links are only discovery.
 COMMUNITY_SEARCH = "https://news.google.com/rss/search?q=site%3Areddit.com%2Fr%2FMacau%20travel%20experience%20when%3A30d&hl=en-US&gl=US&ceid=US:en"
@@ -91,6 +92,10 @@ def entries(raw, source):
             continue
         if not RELEVANT.search(title) and "Cultural Affairs" not in source:
             continue
+        if "Google News · Macau" in source:
+            topic_title = re.sub(r"\s+-\s+[^-]{2,80}$", "", title)
+            if not re.search(r"maca[ou]|taipa|cotai|coloane|senado|venetian|zhuhai.macao", topic_title, re.I):
+                continue
         out.append({"date":date.date().isoformat(),"title":title,"url":link,"source":source,"kind":"RSS headline"})
     return out
 
