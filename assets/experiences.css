@@ -20,3 +20,30 @@
 @media print{header,.tabs-shell,footer,.guide-toolbar,.guide-buttons{display:none!important}}
 
 .guide-stop-body .guide-story{margin:10px 0;padding:12px 14px;background:#f1f6f0;border-left:3px solid #cfa15f;color:#34594a;font-size:13px;line-height:1.65;border-radius:0 10px 10px 0}
+
+
+/* City-guide mobile usability */
+.city-hero-actions{display:flex;gap:11px;flex-wrap:wrap;align-items:center}
+.city-hero-actions .pill.light{background:#f6f7f1;color:#234e3d;border-color:#f6f7f1}
+.city-hero-alert{color:white;font-size:13px;text-decoration:underline;text-underline-offset:5px;font-weight:800;padding:10px}
+.city-tab-mobile{display:none}
+.tabs{scrollbar-width:thin;scrollbar-color:#acc0b2 transparent}
+.tabs::-webkit-scrollbar{display:block;height:5px}
+.tabs::-webkit-scrollbar-thumb{background:#acc0b2;border-radius:10px}
+.tabs-shell{scroll-margin-top:80px}
+@media(max-width:1050px){
+ .city-tab-mobile{display:flex;gap:10px;padding:13px 0;align-items:center;justify-content:space-between}
+ .city-tab-mobile label{font-size:12px;font-weight:800;max-width:35%;color:#355847}
+ .city-tab-mobile select{font:inherit;color:#204837;font-weight:700;background:#fff;border:1px solid #adcab9;border-radius:9px;padding:12px 14px;min-height:46px;width:min(440px,64%)}
+ .tabs-shell .tabs{display:none}
+}
+@media(max-width:650px){
+ body[data-page="city"] .hero{min-height:470px!important}
+ body[data-page="city"] .hero-inner{padding:50px 0}
+ body[data-page="city"] .hero-inner h1{font-size:clamp(39px,9vw,58px)}
+ .city-hero-actions{gap:8px}
+ .city-hero-actions .pill{font-size:11px;padding:11px 14px}
+ .city-hero-alert{font-size:11px}
+ .city-tab-mobile label{font-size:11px;max-width:38%}
+ .city-tab-mobile select{width:61%;font-size:13px}
+}
