@@ -2,10 +2,13 @@
 
 **LIVE PUBLIC WEBSITE:** https://travel-repositories.vercel.app/ (automatic GitHub → Vercel deployment).\n\nOptional GitHub Pages URL, once enabled: https://anatwork14.github.io/travel-repositories/
 
-A responsive, Vietnamese-language, city-level travel guide powered by structured destination folders. Starting destination: **Macau, December 2026**.
+A Vietnamese-language, **multi-destination travel discovery and preparation platform**. The homepage works independently of Macau. The Macau city guide is the first published city, while future destinations remain labeled as research-planned (no fabricated guide data).
 
 ## Features
-- Home destination directory, city hero and eleven working tabs: Overview, Check-in, Specialties, Hotels, Market Prices, Interactive Map, Recent Events & Reviews, Self-guided Tour & Reports, Safety & Red Flags, Itinerary & Gifts, Sources.
+- **Destination-neutral homepage:** search and filter by country/territory, province/region and locality with accent-insensitive aliases; clear published/planned status, fully responsive design and generic pre-trip preparation checklist.
+- Homepage trip-workspace: choose destination/departure date/domestic vs international, six checklist stages, completed/pending tasks, editable custom tasks, progress and TXT export (on-device localStorage only).
+- Travel UX research: `docs/travel-experience-ux-research.md` (academic MTE model, CDC/FCDO travel readiness, NNGroup information scent, W3C WCAG 2.2).
+- City hero and eleven working tabs: Overview, Check-in, Specialties, Hotels, Market Prices, Interactive Map, Recent Events & Reviews, Self-guided Tour & Reports, Safety & Red Flags, Itinerary & Gifts, Sources.
 - 12 Macau check-in locations with coordinates, region filter, on-device favorites and OpenStreetMap directions.
 - 7 food specialties, 7 hotel profiles (MICHELIN Keys 2026 where published), restaurant/bus/LRT/taxi spending ranges and August 2026 hotel market-average benchmark.
 - Macau Pataca → VND/HKD converter, customizable per-person trip budget calculator.
@@ -18,12 +21,16 @@ A responsive, Vietnamese-language, city-level travel guide powered by structured
 
 ```text
 travel-repositories/
-├── index.html                 # All destination directory
+├── index.html                 # Universal destination search & preparation homepage
 ├── macau/                     # First destination, one folder per country/region
 │   ├── index.html             # City landing page
 │   └── data.js                # Structured Macau travel facts
 ├── assets/
-│   ├── app.js                 # Shared interactive rendering logic
+│   ├── app.js                 # City guide router and renderer
+│   ├── home.js                # Search-first universal homepage
+│   ├── destinations.js        # Country / province / city registry and availability
+│   ├── travel-checklist.js    # General travel readiness checklist
+│   ├── home.css               # Responsive homepage styles
 │   └── site.css               # Responsive design
 ├── .github/workflows/pages.yml
 └── .nojekyll
@@ -96,3 +103,28 @@ python3 -m http.server 8000
   assets/intelligence.js · assets/guide.js · assets/experiences.css
   macau/intelligence.json · macau/live-news.json · macau/review-links.json
   scripts/refresh_intelligence.py · .github/workflows/refresh-intelligence.yml
+
+
+## October 2026 — Multi-destination discovery experience
+
+The **homepage no longer defaults to Macau**. It now provides a generic entry for many countries, provinces and cities; the published Macau guide remains at `/macau/`.
+
+- `assets/destinations.js`: declarative destination registry (`country`, `province`, `locality`, `type`, `continent`, `status`, `path`). The non-availability label **Sắp nghiên cứu** is essential: only published records link to a real guide.
+- Initial discovery index: 22 locations in Asia, including multiple provinces/localities in Vietnam, Japan, Thailand, Korea, Singapore, Hong Kong, Taiwan and Macau. They are NOT 22 published reports.
+- Real published city count is computed separately from the discovery count; do not advertise directory cards as researched guides.
+- `assets/home.js` renders accessible discovery controls with reactive filters and a helpful empty state; search supports Unicode normalization and common aliases.
+- `assets/travel-checklist.js` uses six preparation stages. International-only checks appear for international trips; status persists locally. Users can add up to 40 custom tasks and download the checklist as UTF-8 TXT.
+- Any changes to destination availability or geography must be manually reviewed and accompanied by an existing, source-backed destination path before switching from `planned` to `published`.
+- No personal data is sent to backend or inserted into the URL for homepage checklist. Do NOT store passport numbers, payment card data or sensitive health information.
+
+### How to add a new country/city
+
+1. Choose canonical folder e.g. `japan/tokyo/` or `vietnam/da-nang/` (do not create a published card before the guide exists).
+2. Add a source-linked city dataset, HTML entry and route, with validation and up-to-date facts.
+3. Add or update exactly one registry record with a published `path` pointing to a real page.
+4. Extend city-guide renderer if the dataset is not Macau-specific; city renderer is currently specialized for Macau and is **not** magically reusable as-is.
+5. Update the source registry, test mobile accessibility, and run GitHub CI before merging.
+
+### UX principles
+
+See [travel experience & UX research](docs/travel-experience-ux-research.md). The research differentiates peer-reviewed memorable-tourism factors and official pre-travel checklists from **design hypotheses** that should be validated through user testing. Accessibility aims for WCAG 2.2 and progressive disclosure rather than forcing all checklist tasks onto the first screen.
