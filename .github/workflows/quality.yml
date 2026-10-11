@@ -13,7 +13,10 @@ jobs:
       - name: Validate JavaScript syntax
         run: |
           node --check assets/app.js
+          node --check assets/intelligence.js
+          node --check assets/guide.js
           node --check macau/data.js
+          python3 -m py_compile scripts/refresh_intelligence.py
       - name: Validate static document and navigation
         run: |
           python3 - <<'PY'
@@ -28,5 +31,15 @@ jobs:
           for name, phrases in checks.items():
             content=(root/name).read_text(encoding="utf-8")
             for phrase in phrases: assert phrase in content, (name, phrase)
-          print("Source modules and public paths verified")
+          import json
+          for name in ["macau/intelligence.json", "macau/live-news.json", "macau/review-links.json"]:
+            data=json.loads((root/name).read_text(encoding="utf-8"))
+            assert isinstance(data,dict)
+          app=(root/"assets/app.js").read_text(encoding="utf-8")
+          for feature in ["renderInsights", "activateInsights", "renderGuide", "activateGuide"]:
+            assert feature in app
+          assert 'data-intel-filter' in (root/"assets/intelligence.js").read_text(encoding="utf-8")
+          assert 'data-guide-export' in (root/"assets/guide.js").read_text(encoding="utf-8")
+          assert 'experiences.css' in (root/"macau/index.html").read_text(encoding="utf-8")
+          print("Source modules, new tour/review modules and public paths verified")
           PY
