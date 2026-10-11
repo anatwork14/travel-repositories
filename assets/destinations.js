@@ -26,4 +26,5 @@ export const destinations = [
 ];
 export const publishedDestinations=destinations.filter(d=>d.status==="published");
 export const countryNames=[...new Set(destinations.map(d=>d.country))].sort((a,b)=>a.localeCompare(b,'vi'));
-export function destinationSearchText(d){return [d.name,d.locality,d.province,d.country,d.continent,d.type].join(" ").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/đ/g,'d');}
+const aliases={"mo-macau":"macao ao mon 澳門","vn-hcm":"sai gon saigon tphcm ho chi minh city","vn-hanoi":"ha noi hanoi","vn-danang":"da nang danang","vn-dalat":"da lat dalat","vn-hoian":"hoi an hoian","vn-phuquoc":"phu quoc phuquoc","jp-tokyo":"dong kinh","th-bangkok":"bang coc","hk-hongkong":"hong kong hkg","sg-singapore":"sing ga po","vn-nhatrang":"nha trang","vn-sapa":"sa pa sapa"};
+export function destinationSearchText(d){return [d.name,d.locality,d.province,d.country,d.continent,d.type,aliases[d.id]||"",d.country==="Việt Nam"?"vietnam":"",d.country==="Nhật Bản"?"japan":"",d.country==="Thái Lan"?"thailand":"",d.country==="Hàn Quốc"?"korea":"",d.country==="Đài Loan"?"taiwan":""].join(" ").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/đ/g,'d');}
