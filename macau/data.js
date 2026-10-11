@@ -8,7 +8,7 @@ export const macau = {
   weather:{avg:"16,8°C",range:"14–20°C",note:"Mát và tương đối khô. Mang áo khoác, giày đi bộ êm."},
   images:{
     city:"https://commons.wikimedia.org/wiki/Special:FilePath/Macau_-_Senado_Square.jpg?width=1400",
-    ruins:"https://commons.wikimedia.org/wiki/Special:FilePath/The_Ruins_of_St._Paul%27s_in_Macau.jpg?width=900",
+    ruins:"https://commons.wikimedia.org/wiki/Special:FilePath/Ruins_of_St_Paul%27s%2C_Macau_%2830843847251%29.jpg?width=900",
     venetian:"https://commons.wikimedia.org/wiki/Special:FilePath/The_Venetian_Macao_Night_View_201104.jpg?width=900",
     taipa:"https://commons.wikimedia.org/wiki/Special:FilePath/Taipa_Houses%E2%80%93Museum_1.jpg?width=900",
     tart:"https://commons.wikimedia.org/wiki/Special:FilePath/Macau_Eggtart.jpg?width=900",
@@ -96,9 +96,9 @@ export const macau = {
     {name:"Sở Du lịch Macau — vận tải",url:"https://www.macaotourism.gov.mo/en/travelessential/before-you-travel/local-transportation"},
     {name:"UNESCO — Historic Centre of Macao",url:"https://whc.unesco.org/en/list/1110/"},
     {name:"Wynn Palace — SkyCab",url:"https://www.wynnresortsmacau.com/en/wynn-palace/experiences/entertainment/sky-cab"},
-    {name:"Wikimedia Commons — ảnh Senado Square",url:"https://commons.wikimedia.org/wiki/File:Macau_-_Senado_Square.jpg"},
-    {name:"Wikimedia Commons — ảnh St. Paul's",url:"https://commons.wikimedia.org/wiki/File:The_Ruins_of_St._Paul%27s_in_Macau.jpg"},
-    {name:"Wikimedia Commons — ảnh Venetian",url:"https://commons.wikimedia.org/wiki/File:The_Venetian_Macao_Night_View_201104.jpg"},
+    {name:"Wikimedia Commons — Senado Square (kewl.lu, CC BY 2.0)",url:"https://commons.wikimedia.org/wiki/File:Macau_-_Senado_Square.jpg"},
+    {name:"Wikimedia Commons — ảnh St. Paul's",url:"https://commons.wikimedia.org/wiki/File:Ruins_of_St_Paul%27s%2C_Macau_%2830843847251%29.jpg"},
+    {name:"Wikimedia Commons — Venetian (soeperbaby, CC BY 2.0)",url:"https://commons.wikimedia.org/wiki/File:The_Venetian_Macao_Night_View_201104.jpg"},
     {name:"Wikimedia Commons — ảnh Taipa Houses",url:"https://commons.wikimedia.org/wiki/File:Taipa_Houses%E2%80%93Museum_1.jpg"}
   ]
 };
