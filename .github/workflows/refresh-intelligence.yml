@@ -1,0 +1,36 @@
+name: Refresh Macau travel intelligence
+on:
+  schedule:
+    - cron: '17 2 * * *' # daily UTC, GitHub may delay scheduled jobs
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: macau-intelligence-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    if: github.repository == 'anatwork14/travel-repositories'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Read public RSS metadata and verify source JSON
+        run: |
+          python3 scripts/refresh_intelligence.py
+          python3 -m json.tool macau/live-news.json > /dev/null
+          python3 -m json.tool macau/review-links.json > /dev/null
+      - name: Publish source-linked updates when changed
+        run: |
+          if ! git diff --quiet -- macau/live-news.json macau/review-links.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add macau/live-news.json macau/review-links.json
+            git commit -m "data: refresh Macau public RSS headlines and review discovery"
+            git push
+          else
+            echo "No changes in collected information."
+          fi
