@@ -57,3 +57,6 @@ jobs:
           assert "renderHome()" in app and "bindHome()" in app
           print("All modules, neutral homepage, checklist and city public paths verified")
           PY
+
+      - name: Headless Chrome smoke test (homepage and Macau)
+        run: bash scripts/smoke-browser.sh
