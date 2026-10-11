@@ -1,5 +1,10 @@
 name: Refresh Macau travel intelligence
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/refresh_intelligence.py'
+      - '.github/workflows/refresh-intelligence.yml'
   schedule:
     - cron: '17 2 * * *' # daily UTC, GitHub may delay scheduled jobs
   workflow_dispatch:
