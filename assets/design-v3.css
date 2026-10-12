@@ -311,3 +311,12 @@ body[data-page=city] .city-v3-header .v3-logo{font-size:19px}
 body[data-page=city] .city-v3-header .v3-nav-cta{font-size:11px}
 body[data-page=city] .tabs-shell{top:66px}
 }
+
+
+/* Editorial inspiration by interest; not a recommendation ranking. */
+.v3-moods{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:23px;background:#eeefe8;padding:20px 22px;border-radius:8px}
+.v3-moods strong{letter-spacing:.13em;font-size:10px;color:#6c765f;white-space:nowrap}
+.v3-moods>div{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.v3-moods button{background:#fff;border:1px solid #d7dfd3;border-radius:50px;font-size:12px;font-weight:800;color:#345441;padding:10px 14px;min-height:43px}
+.v3-moods button:hover,.v3-moods button.selected{background:#234b3c;color:#fff;border-color:#234b3c}
+@media(max-width:800px){.v3-moods{align-items:flex-start;flex-direction:column}.v3-moods>div{justify-content:flex-start}}
