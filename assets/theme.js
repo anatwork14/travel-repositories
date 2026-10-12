@@ -61,4 +61,5 @@ function init(){
  window.addEventListener('storage',e=>{if(e.key===STORAGE_KEY)setTheme(safeId(e.newValue));});
  draw();
 }
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+/* Defer scripts can run at readyState=interactive before the ES-module app renders its header. */
+if(document.readyState==='complete')init();else document.addEventListener('DOMContentLoaded',init,{once:true});
