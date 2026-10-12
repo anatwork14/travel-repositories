@@ -175,3 +175,17 @@ body[data-page=home] .prep-top h2 em {font-family:var(--font-editorial);font-wei
 @media(prefers-reduced-motion:reduce){
  .theme-panel,.theme-trigger{animation:none;transition:none;}
 }
+
+
+/* Keep the same explicit palette access in the Design Lab header. */
+.lab-nav .theme-switcher{margin-left:auto;flex-shrink:0;}
+.lab-nav .theme-trigger{font-family:var(--font-body);font-weight:700;}
+.lab-nav .theme-panel-head strong{font-family:var(--font-body);}
+@media(max-width:700px){
+  .lab-nav .back{display:none;}
+  .lab-nav .theme-trigger .theme-trigger-title{display:inline-flex!important;font-size:0;}
+  .lab-nav .theme-trigger .theme-trigger-title::after{content:"Màu";font-size:12px;}
+  .lab-nav .theme-trigger .theme-trigger-name,.lab-nav .theme-trigger .theme-chevron{display:none!important;}
+  .lab-nav .theme-trigger-icon{display:inline-grid!important;}
+  .lab-nav .theme-panel{right:0;width:min(340px,calc(100vw - 28px));}
+}
