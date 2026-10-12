@@ -1,12 +1,13 @@
-name: Refresh Macau travel intelligence
+name: Refresh Macau travel intelligence and blog discovery
 on:
   push:
     branches: [main]
     paths:
       - 'scripts/refresh_intelligence.py'
+      - 'scripts/refresh_travel_pulse.py'
       - '.github/workflows/refresh-intelligence.yml'
   schedule:
-    - cron: '17 2 * * *' # daily UTC, GitHub may delay scheduled jobs
+    - cron: '23 */3 * * *' # every 3 hours UTC; GitHub scheduling is best-effort, not realtime
   workflow_dispatch:
 permissions:
   contents: write
@@ -26,14 +27,16 @@ jobs:
       - name: Read public RSS metadata and verify source JSON
         run: |
           python3 scripts/refresh_intelligence.py
+          python3 scripts/refresh_travel_pulse.py
           python3 -m json.tool macau/live-news.json > /dev/null
           python3 -m json.tool macau/review-links.json > /dev/null
+          python3 -m json.tool macau/travel-blogs.json > /dev/null
       - name: Publish source-linked updates when changed
         run: |
-          if ! git diff --quiet -- macau/live-news.json macau/review-links.json; then
+          if ! git diff --quiet -- macau/live-news.json macau/review-links.json macau/travel-blogs.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add macau/live-news.json macau/review-links.json
+            git add macau/live-news.json macau/review-links.json macau/travel-blogs.json
             git commit -m "data: refresh Macau public RSS headlines and review discovery"
             git push
           else
