@@ -24,6 +24,7 @@ function draw(){
  }
  const label=document.querySelector('#theme-trigger-label');
  if(label)label.textContent=THEMES.find(t=>t.id===current).name;
+ const button=document.getElementById('theme-trigger');if(button)button.setAttribute('aria-label','Đổi màu giao diện. Màu hiện tại: '+THEMES.find(t=>t.id===current).name);
  updateMeta(current);
 }
 function setTheme(id){
@@ -44,7 +45,7 @@ function init(){
  const header=document.querySelector('.v3-header')||document.querySelector('.lab-nav')||document.querySelector('header');
  if(!header)return;
  const root=document.createElement('div');root.id='theme-switcher';root.className='theme-switcher';
- root.innerHTML='<button class="theme-trigger" id="theme-trigger" type="button" aria-label="Đổi bảng màu" aria-controls="theme-panel" aria-expanded="false"><span class="theme-trigger-icon" aria-hidden="true">◐</span><span id="theme-trigger-label">Forest</span><span aria-hidden="true">⌄</span></button>'+
+ root.innerHTML='<button class="theme-trigger" id="theme-trigger" type="button" aria-label="Đổi màu giao diện" title="Chọn màu giao diện" aria-haspopup="true" aria-controls="theme-panel" aria-expanded="false"><span class="theme-trigger-icon" aria-hidden="true">◉</span><span class="theme-trigger-title">Màu sắc</span><span class="theme-trigger-name" id="theme-trigger-label">Forest</span><span class="theme-chevron" aria-hidden="true">⌄</span></button>'+
  '<div id="theme-panel" class="theme-panel" hidden>'+panelMarkup()+'</div>';
  header.append(root);
  const opener=root.querySelector('#theme-trigger'),panel=root.querySelector('#theme-panel');
