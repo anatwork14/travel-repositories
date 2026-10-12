@@ -1,0 +1,35 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../assets/site.css"><link rel="stylesheet" href="../assets/design-v3.css">
+<link rel="stylesheet" href="../assets/themes.css"><link rel="stylesheet" href="../assets/typography-v4.css">
+<script defer src="../assets/theme.js"></script>
+<title>Theme and typography smoke test</title></head>
+<body data-page="home">
+<header class="v3-header"><a class="v3-logo" href="/"><span class="v3-mark">✳</span> notebook<span class="v3-dot">.</span>travel</a><nav><a href="/">Điểm đến</a></nav><a class="v3-nav-cta" href="/">Khám phá</a></header>
+<main><h1>Hành trình đáng nhớ, trải nghiệm dễ dàng</h1><p>Nhiều quốc gia và tỉnh thành · trải nghiệm đầy đủ dấu tiếng Việt: ấ, ồ, ễ, ữ, đ.</p></main>
+<script>
+window.addEventListener("load",()=>{
+ const trigger=document.getElementById("theme-trigger"),panel=document.getElementById("theme-panel");
+ const assert=(v,msg)=>{if(!v)throw new Error(msg);};
+ try {
+  assert(trigger && panel,"theme picker must be inserted into header");
+  assert(trigger.closest(".v3-header"),"picker is not inside header");
+  assert(getComputedStyle(document.body).fontFamily.includes("Be Vietnam Pro"),"body uses wrong font");
+  assert(getComputedStyle(document.querySelector("h1")).fontFamily.includes("Be Vietnam Pro"),"heading uses wrong font");
+  trigger.click();
+  assert(!panel.hidden && trigger.getAttribute("aria-expanded")==="true","theme panel cannot open");
+  panel.querySelector('[data-theme-choice="ocean"]').click();
+  assert(document.documentElement.dataset.colorTheme==="ocean","did not set ocean");
+  assert(localStorage.getItem("travel-notebook-color-theme-v1")==="ocean","did not persist selection");
+  trigger.click();
+  panel.querySelector('[data-theme-choice="midnight"]').click();
+  assert(document.documentElement.dataset.colorTheme==="midnight","did not set midnight");
+  trigger.click();
+  document.dispatchEvent(new KeyboardEvent("keydown",{key:"Escape",bubbles:true}));
+  assert(panel.hidden && trigger.getAttribute("aria-expanded")==="false","Escape cannot close palette");
+  trigger.click();panel.querySelector('[data-theme-choice="forest"]').click();
+  const rect=trigger.getBoundingClientRect();
+  assert(rect.left>=-1 && rect.right<=innerWidth+1,"header palette goes offscreen");
+  document.body.dataset.qaStatus="PASS";
+ }catch(err){document.body.dataset.qaStatus="FAIL";document.body.dataset.qaError=err.message;}
+});
+</script></body></html>
