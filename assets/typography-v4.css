@@ -189,3 +189,20 @@ body[data-page=home] .prep-top h2 em {font-family:var(--font-editorial);font-wei
   .lab-nav .theme-trigger-icon{display:inline-grid!important;}
   .lab-nav .theme-panel{right:0;width:min(340px,calc(100vw - 28px));}
 }
+
+
+/* Tablet: keep a textual label instead of leaving only a mysterious glyph. */
+@media(min-width:701px) and (max-width:850px){
+ .v3-header .theme-trigger .theme-trigger-title,
+ .lab-nav .theme-trigger .theme-trigger-title{display:inline-flex!important;}
+ .v3-header .theme-trigger .theme-trigger-name,
+ .lab-nav .theme-trigger .theme-trigger-name{display:none!important;}
+ .v3-header .theme-trigger .theme-chevron{display:inline-flex!important;}
+}
+@media(min-width:701px) and (max-width:1100px){
+ .v3-header .v3-nav-cta{margin-left:auto;}
+ .v3-header #theme-switcher{margin-left:0;}
+}
+@media(max-width:700px){
+ .v3-header #theme-switcher{margin-left:auto;}
+}
