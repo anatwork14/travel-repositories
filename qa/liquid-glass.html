@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Liquid Glass regression QA</title>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/design-v3.css">
+<link rel="stylesheet" href="../assets/themes.css">
+<link rel="stylesheet" href="../assets/typography-v4.css">
+<link rel="stylesheet" href="../assets/liquid-glass.css">
+<script defer src="../assets/theme.js"></script>
+<script defer src="../assets/liquid-glass.js"></script>
+</head><body data-page="home">
+<header class="v3-header"><a class="v3-logo" href="/">✳ notebook.travel</a><nav><a href="/">Khám phá</a></nav><a href="/" class="v3-nav-cta">Điểm đến ↗</a></header>
+<main id="main-content">
+<section class="v3-hero"><div class="v3-hero-content"><span class="v3-eyebrow">DISCOVER MORE</span><h1>Đi xa một chút.<br><em>Thấy thế giới khác đi.</em></h1>
+<form class="v3-hero-search"><label for="q" class="sr-only">Điểm đến</label><span aria-hidden="true">⌕</span><input id="q" placeholder="Bạn muốn đi đâu?"><button type="button">Tìm kiếm ↗</button></form></div></section>
+<section class="v3-directory"><div class="container"><div class="v3-filters"><div class="v3-filter-selects"><label>Quốc gia<select><option>Việt Nam</option></select></label></div></div>
+<article class="v3-place-card" style="max-width:350px"><div class="v3-place-body"><h3>Macau</h3><p>Thông tin đáng tin cậy, cảnh báo và mức giá dễ đọc.</p></div></article>
+</div></section></main>
+<script>
+window.addEventListener('load',()=>{
+  const fail=err=>{document.body.dataset.glassQa="FAIL";document.body.dataset.glassError=String(err.message||err)};
+  try{
+    const require=(condition,label)=>{if(!condition)throw Error(label)};
+    const header=document.querySelector('.v3-header');
+    const search=document.querySelector('.v3-hero-search');
+    const filter=document.querySelector('.v3-filters');
+    const card=document.querySelector('.v3-place-card');
+    const trigger=document.getElementById('theme-trigger');
+    require(trigger&&trigger.closest('.v3-header'),'visible switcher in header');
+    require(getComputedStyle(header).position==='sticky','sticky glass header');
+    require(parseFloat(getComputedStyle(search).borderTopLeftRadius)>=15,'rounded search material');
+    require(parseFloat(getComputedStyle(card).borderTopLeftRadius)>=18,'rounded place cards');
+    require(getComputedStyle(card).color!=='rgba(0, 0, 0, 0)','readable surface color');
+    const backdrop=getComputedStyle(search).backdropFilter || getComputedStyle(search).webkitBackdropFilter;
+    if(CSS.supports('backdrop-filter','blur(2px)'))require(backdrop!=='none','search material blur');
+    const original={};
+    for(const id of ['forest','ocean','sunset','lavender','sakura','midnight']){
+      trigger.click();
+      require(document.getElementById('theme-panel').hidden===false,'theme picker opens');
+      const choice=document.querySelector('[data-theme-choice="'+id+'"]');
+      require(choice,'theme option '+id);
+      choice.click();
+      require(document.documentElement.dataset.colorTheme===id,'theme state '+id);
+      require(document.getElementById('theme-panel').hidden,'close after picking');
+      original[id]=getComputedStyle(document.body).backgroundColor;
+      require(getComputedStyle(filter).borderTopColor!=='rgba(0, 0, 0, 0)','filter edge '+id);
+    }
+    require(Object.values(original).filter((x,i,a)=>a.indexOf(x)===i).length===6,'six themes must visibly differ');
+    trigger.click();document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+    require(document.getElementById('theme-panel').hidden,'Escape closes');
+    trigger.click();document.querySelector('[data-theme-choice="forest"]').click();
+    const bounds=trigger.getBoundingClientRect();
+    require(bounds.width>=41,'tap target');
+    require(bounds.left>=-1&&bounds.right<=innerWidth+1,'theme control fits viewport');
+    require(document.documentElement.scrollWidth<=innerWidth+2,'no horizontal overflow');
+    document.body.dataset.glassQa='PASS';
+  }catch(e){fail(e);}
+});
+</script>
+</body></html>
