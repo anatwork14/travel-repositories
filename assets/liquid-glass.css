@@ -512,3 +512,27 @@ html[data-concept="bento"] .v3-hero-visual{border-radius:30px;overflow:hidden}
  .v3-hero-search,.v3-filters,.v3-moods,.theme-panel,.v3-place-card{border:2px solid var(--tone-ink)!important}
  .v3-place-body>p,.v3-section-heading>p,.v3-how-card p{color:var(--tone-ink)!important}
 }
+
+
+/* Specular cue reacts only to pointer on an active control; never blocks hit testing. */
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  .v3-hero-search,.v3-filters,.v3-moods,.v3-header .theme-trigger,
+  body[data-page=city] .guide-toolbar{position:relative;isolation:isolate}
+  .v3-hero-search::after,.v3-filters::after,.v3-moods::after,
+  .v3-header .theme-trigger::after,
+  body[data-page=city] .guide-toolbar::after{
+    content:"";position:absolute;inset:1px;pointer-events:none;z-index:0;
+    border-radius:inherit;
+    background:radial-gradient(ellipse 58% 120% at var(--lg-x,50%) var(--lg-y,-55%),
+       color-mix(in srgb,var(--lg-highlight) 65%,transparent),
+       transparent 71%);
+    opacity:0;transition:opacity .22s ease;
+  }
+  .v3-hero-search:hover::after,.v3-filters:hover::after,.v3-moods:hover::after,
+  .v3-header .theme-trigger:hover::after,body[data-page=city] .guide-toolbar:hover::after{opacity:.52}
+  .v3-hero-search>*,
+  .v3-filters>*,
+  .v3-moods>*,
+  .v3-header .theme-trigger>*,
+  body[data-page=city] .guide-toolbar>*{position:relative;z-index:1}
+}
