@@ -46,5 +46,13 @@ curl -fsS 'http://127.0.0.1:8765/design-lab/' | grep -F 'Minimal Editorial' > /d
 grep -F 'data-qa-status="PASS"' /tmp/travel-notebook-theme-qa.html >/dev/null || { echo "::error::Palette interaction failed"; grep -o 'data-qa-error="[^"]*"' /tmp/travel-notebook-theme-qa.html || true; exit 1; }
 "$CHROME" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --window-size=390,844 --virtual-time-budget=3500 --dump-dom 'http://127.0.0.1:8765/qa/theme-typography.html' >/tmp/travel-notebook-theme-mobile.html 2>/tmp/travel-theme-qa-mobile.err
 grep -F 'data-qa-status="PASS"' /tmp/travel-notebook-theme-mobile.html >/dev/null || { echo "::error::Mobile header/palette failed"; grep -o 'data-qa-error="[^"]*"' /tmp/travel-notebook-theme-mobile.html || true; exit 1; }
-echo "Browser tests passed: responsive palette interactions, Vietnamese typography, homepage, Macau guide and three design variants."
+# Liquid Glass regression: visual materials, six palettes, and keyboard access.
+for viewport in "1440,900" "390,844"; do
+  "$CHROME" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --window-size="$viewport" --virtual-time-budget=3500 --dump-dom 'http://127.0.0.1:8765/qa/liquid-glass.html' >/tmp/travel-liquid-glass-qa.html 2>/tmp/travel-liquid-glass-chrome.err
+  grep -F 'data-glass-qa="PASS"' /tmp/travel-liquid-glass-qa.html >/dev/null || { echo "::error::Liquid Glass regression failed ($viewport)"; grep -o 'data-glass-error="[^"]*"' /tmp/travel-liquid-glass-qa.html || true; exit 1; }
+done
+grep -F 'liquid-glass.css' /tmp/travel-notebook-home-dom.html >/dev/null
+grep -F 'liquid-glass.css' /tmp/travel-notebook-city-dom.html >/dev/null
+echo "Browser tests passed: Liquid Glass 6 palettes, responsive header, Vietnamese typography, Macau & itinerary."
+
 
