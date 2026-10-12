@@ -12,7 +12,8 @@ const photos={
  halong:{url:commons('Ha Long Bay, Vietnam, Boats.jpg',1100),credit:'Vyacheslav Argenberg · CC BY 4.0'}
 };
 const images={'mo-macau':'macau','vn-hanoi':'hanoi','jp-tokyo':'tokyo','th-bangkok':'bangkok'};
-let query='',country='all',province='all',continent='all',status='all',expanded=false;
+const interests={food:['mo-macau','vn-hanoi','vn-hcm','jp-osaka','th-bangkok','my-kualalumpur','sg-singapore'],heritage:['mo-macau','vn-hanoi','vn-hue','vn-hoian','jp-kyoto','kr-seoul'],nature:['vn-dalat','vn-sapa','vn-phuquoc','vn-nhatrang','th-phuket'],city:['jp-tokyo','vn-hcm','sg-singapore','kr-seoul','hk-hongkong','tw-taipei'],slow:['vn-dalat','vn-hoian','th-chiangmai','jp-kyoto','vn-phuquoc']};
+let query='',country='all',province='all',continent='all',status='all',mood='all',expanded=false;
 const option=(title,value,selected)=>'<option value="'+esc(value)+'"'+(value===selected?' selected':'')+'>'+esc(title)+'</option>';
 const countries=()=>option('Mọi quốc gia / vùng lãnh thổ','all',country)+countryNames.map(x=>option(x,x,country)).join('');
 const provinces=()=>option('Mọi tỉnh / khu vực','all',province)+[...new Set(destinations.filter(x=>country==='all'||x.country===country).map(x=>x.province))].sort((a,b)=>a.localeCompare(b,'vi')).map(x=>option(x,x,province)).join('');
@@ -38,7 +39,7 @@ export function renderHome(){
  '<div class="v3-hero-visual">'+image('hanoi','Hồ Hoàn Kiếm, Hà Nội','v3-hero-photo')+'<div class="v3-hero-shade"></div><span class="v3-hero-coord">21°01′N / 105°51′E</span><div class="v3-hero-caption"><small>POSTCARD 01 / VIETNAM</small><strong>Hà Nội</strong><span>Ảnh cảm hứng · cẩm nang đang nghiên cứu</span></div><div class="v3-floating-postcard">'+image('tokyo','Tokyo, Nhật Bản')+'<span>TOKYO, JAPAN ↗</span></div></div></section>'+
  '<div class="v3-marquee"><span>COLLECT MOMENTS, NOT CHECKLISTS</span><b>✳</b><span>GO SLOW · SEE MORE</span><a href="#inspiration">CUỘN ĐỂ KHÁM PHÁ ↓</a></div>'+
  '<section id="inspiration" class="v3-inspiration"><div class="container"><div class="v3-section-heading"><div><span class="v3-eyebrow">THE CURATED ATLAS / VOL. 01</span><h2>Mỗi nơi chốn,<br><em>một câu chuyện.</em></h2></div><p>Từ những con phố cũ đến đường chân trời mới. Đây là những điểm đến gợi cảm hứng; chỉ những nơi được đánh dấu sẵn sàng mới có cẩm nang.</p></div>'+
- '<div class="v3-posters">'+poster('Macau','macau','EAST ASIA')+poster('Hà Nội','hanoi','VIETNAM')+poster('Tokyo','tokyo','JAPAN')+poster('Bangkok','bangkok','THAILAND')+'</div><p class="v3-image-note">Nguồn hình ảnh và giấy phép tại <a href="https://github.com/anatwork14/travel-repositories/blob/main/docs/design-system-v3.md" target="_blank" rel="noopener noreferrer">ghi chú thiết kế</a>. Ảnh không đồng nghĩa đã có cẩm nang.</p></div></section>'+
+ '<div class="v3-posters">'+poster('Macau','macau','EAST ASIA')+poster('Hà Nội','hanoi','VIETNAM')+poster('Tokyo','tokyo','JAPAN')+poster('Bangkok','bangkok','THAILAND')+'</div><div class="v3-moods"><strong>BẠN MUỐN TRẢI NGHIỆM GÌ?</strong><div><button type="button" data-mood="food">◈ Ẩm thực</button><button type="button" data-mood="heritage">✳ Văn hóa & di sản</button><button type="button" data-mood="nature">⌁ Thiên nhiên</button><button type="button" data-mood="city">▧ Thành phố</button><button type="button" data-mood="slow">◷ Du lịch chậm</button></div></div><p class="v3-image-note">Gợi ý theo sở thích là bộ lọc khám phá biên tập, không phải xếp hạng hoặc bảo đảm điểm đến phù hợp mọi người. Nguồn hình ảnh và giấy phép tại <a href="https://github.com/anatwork14/travel-repositories/blob/main/docs/design-system-v3.md" target="_blank" rel="noopener noreferrer">ghi chú thiết kế</a>. Ảnh không đồng nghĩa đã có cẩm nang.</p></div></section>'+
  '<section id="explore" class="v3-directory"><div class="container"><div class="v3-section-heading"><div><span class="v3-eyebrow">FIND YOUR NEXT PLACE</span><h2>Điểm đến trong<br><em>tầm tay.</em></h2></div><p>Tra theo quốc gia, tỉnh và thành phố. Nơi chưa có dữ liệu được đánh dấu rõ, không tạo review hay giá giả.</p></div>'+
  '<div class="v3-filters"><div class="v3-filter-selects"><label>Quốc gia / vùng lãnh thổ<select id="destination-country">'+countries()+'</select></label><label>Tỉnh / thành / khu vực<select id="destination-province">'+provinces()+'</select></label><button type="button" id="v3-clear" class="v3-clear">↻ Xóa bộ lọc</button></div>'+
  '<div class="v3-filter-chips"><div role="group" aria-label="Vùng địa lý"><button type="button" class="chip selected" data-directory-continent="all">Tất cả khu vực</button><button type="button" class="chip" data-directory-continent="Đông Nam Á">Đông Nam Á</button><button type="button" class="chip" data-directory-continent="Đông Á">Đông Á</button></div><div role="group" aria-label="Trạng thái cẩm nang"><button type="button" class="chip selected" data-directory-status="all">Tất cả</button><button type="button" class="chip" data-directory-status="published">Có cẩm nang</button><button type="button" class="chip" data-directory-status="planned">Sắp nghiên cứu</button></div></div></div>'+
@@ -50,23 +51,24 @@ export function renderHome(){
 }
 function renderResults(){
  const target=document.getElementById('destination-results');if(!target)return;
- const results=destinations.filter(x=>(!query||destinationSearchText(x).includes(norm(query)))&&(country==='all'||x.country===country)&&(province==='all'||x.province===province)&&(continent==='all'||x.continent===continent)&&(status==='all'||x.status===status));
- const simple=!query&&country==='all'&&province==='all'&&continent==='all'&&status==='all';
+ const results=destinations.filter(x=>(!query||destinationSearchText(x).includes(norm(query)))&&(country==='all'||x.country===country)&&(province==='all'||x.province===province)&&(continent==='all'||x.continent===continent)&&(status==='all'||x.status===status)&&(mood==='all'||(interests[mood]||[]).includes(x.id)));
+ const simple=!query&&country==='all'&&province==='all'&&continent==='all'&&status==='all'&&mood==='all';
  const subset=simple&&!expanded?results.slice(0,9):results;
  document.getElementById('directory-count').textContent=results.length+' địa điểm tìm thấy · '+results.filter(x=>x.status==='published').length+' cẩm nang đã xuất bản';
  target.innerHTML=subset.map(tile).join('')||'<div class="v3-empty"><h3>Chưa thấy nơi bạn tìm.</h3><p>Thử tên khác hoặc xóa bộ lọc.</p><button id="v3-empty-clear" type="button">Xóa bộ lọc</button></div>';
  document.getElementById('directory-more').innerHTML=simple&&!expanded&&results.length>9?'<button id="v3-show-all" type="button">Xem toàn bộ '+results.length+' địa điểm ↓</button>':'';
  document.querySelectorAll('[data-directory-continent]').forEach(b=>{b.classList.toggle('selected',b.dataset.directoryContinent===continent);b.setAttribute('aria-pressed',String(b.dataset.directoryContinent===continent));});
  document.querySelectorAll('[data-directory-status]').forEach(b=>{b.classList.toggle('selected',b.dataset.directoryStatus===status);b.setAttribute('aria-pressed',String(b.dataset.directoryStatus===status));});
+ document.querySelectorAll('[data-mood]').forEach(b=>{b.classList.toggle('selected',b.dataset.mood===mood);b.setAttribute('aria-pressed',String(b.dataset.mood===mood));});
  document.getElementById('v3-empty-clear')?.addEventListener('click',clear);
  document.getElementById('v3-show-all')?.addEventListener('click',()=>{expanded=true;renderResults();});
 }
 function synchronize(){document.getElementById('destination-query').value=query;document.getElementById('destination-country').innerHTML=countries();document.getElementById('destination-province').innerHTML=provinces();}
-function clear(){query='';country='all';province='all';continent='all';status='all';expanded=false;synchronize();renderResults();}
-function spotlight(place){query=place;country='all';province='all';continent='all';status='all';synchronize();renderResults();document.getElementById('explore').scrollIntoView({behavior:'smooth',block:'start'});}
+function clear(){query='';country='all';province='all';continent='all';status='all';mood='all';expanded=false;synchronize();renderResults();}
+function spotlight(place){query=place;country='all';province='all';continent='all';status='all';mood='all';synchronize();renderResults();document.getElementById('explore').scrollIntoView({behavior:'smooth',block:'start'});}
 export function bindHome(){
  const input=document.getElementById('destination-query');if(!input)return;
- input.addEventListener('input',e=>{query=e.target.value;renderResults();});
+ input.addEventListener('input',e=>{query=e.target.value;mood='all';renderResults();});
  document.getElementById('v3-search-form').addEventListener('submit',e=>{e.preventDefault();document.getElementById('explore').scrollIntoView({behavior:'smooth',block:'start'});});
  document.getElementById('destination-country').addEventListener('change',e=>{country=e.target.value;province='all';synchronize();renderResults();});
  document.getElementById('destination-province').addEventListener('change',e=>{province=e.target.value;renderResults();});
@@ -74,6 +76,7 @@ export function bindHome(){
  document.querySelectorAll('[data-directory-continent]').forEach(b=>b.addEventListener('click',()=>{continent=b.dataset.directoryContinent;renderResults();}));
  document.querySelectorAll('[data-directory-status]').forEach(b=>b.addEventListener('click',()=>{status=b.dataset.directoryStatus;renderResults();}));
  document.querySelectorAll('[data-spotlight]').forEach(b=>b.addEventListener('click',()=>spotlight(b.dataset.spotlight)));
+ document.querySelectorAll('[data-mood]').forEach(b=>b.addEventListener('click',()=>{mood=mood===b.dataset.mood?'all':b.dataset.mood;query='';country='all';province='all';continent='all';status='all';synchronize();renderResults();document.getElementById('explore').scrollIntoView({behavior:'smooth',block:'start'});}));
  document.addEventListener('keydown',e=>{if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement?.tagName)){e.preventDefault();input.focus();}});
  renderResults();bindPrep();
 }
