@@ -1,8 +1,117 @@
 {
-  "updatedAt": null,
-  "lastAttemptAt": null,
-  "sourceCount": 0,
-  "items": [],
+  "updatedAt": "2026-10-12T04:04:04+00:00",
+  "lastAttemptAt": "2026-10-12T04:04:04+00:00",
+  "sourceCount": 4,
+  "items": [
+    {
+      "date": "2026-10-09",
+      "title": "Lee Kum Kee Gluten Free Soy Sauce Wins Healthy Food Guide 2026 Award - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaUw2RmlUM2xQYVh5YWNJTEJwOXdUV25LcVpvYzZ2cTJoUXNyb2ozZzRPRE5lVWpHN3pCXzBBSkdUV2tOUzdDVE5lWVdkbk1KejR5Vm1yYjdvUUh4VzNkclhsSzNKSUFZOFhxLWRZYkV5RGlTTmNIaEVSSWpPR2N5emd6ZXpwa1p3Wm5OVWswQkw3emVNTDRFTi1tZw?oc=5",
+      "source": "Macau Business",
+      "category": "Food and on-the-ground experience",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Deep in the Hidden Forests: Huangshan Introduces Four-Day Itinerary Through Forest Trails and Historic Villages - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcGM5cC02WDV2Z3psc290OE1hbU1ybHJERkVqR3YwN2Z4alRGdkZQRkFITzBkb29BeUtDa2FleGx3bFMxWmh1VG14ZTZSeW9XNGVrWDRQSUNkeDVWQWZmWXhkSV8wWHNGTEVXMDVrTEtNdFN1RVdQc0ZfY0d3b0lUaWFzN3NGblgyX0xhZmo5dXd4NHFBTVBjNkhMTENnVkR3SUxlQ0dDT21JQkJDVUl3LUtfaER1MEJnUm42YUMzZFQ4T1pWUXdvUFJNQ1JWcEJiQkM0?oc=5",
+      "source": "Macau Business",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Macao, Hainan explore multi-stop travel itineraries - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb3ZIR25KY216S0lwZHhTbDNBRUtxMjg1VDZMUE5iQUlfbXBtSVoyYUtfRkR0c2QyU25vLWJYT1lSdjM1TWhtOEU1Q0Q4d2hwbDNhSlI1LWo3N3V4VWx4cmRYR2tReU5VWE5nb3lIV1cyN2Q5NGNfR0dwdDZ5d0VTNDhpdw?oc=5",
+      "source": "Macau Business",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Hainan seeks stronger cross-Strait tourism ties - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9IYzc2dEd3dGVYMlpOdFRfRTRvT05PYk9Eb3o5Mm1sNFdYekdwWW5CVm9ZSzNWdTJERERRTWc2b3NZUDRmME5BOHg5cHFqUHJkVUQzaWVPVVp3Yk9tU2lFbURBUzVDNkcweDRnTGhQV010cGdEaUZHRjdYYVo1c1E?oc=5",
+      "source": "Macau Business",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-21",
+      "title": "\"Salute to the National Flag\" Hong Kong and Macao Youth Flag-Raising Teams' Beijing Visit Delegation Received by State Leader - 巴士的報",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQSV9VcDFLRmd3R0ZNZ1Bnd3BjazFCYjZMMG5EZWtReWpwRGNqU0lEVnNHWU9pX1pUNy1BUFlRS29JdWd5T2w4NzVrd1lkQWtmcF91YzU4U1NXS0RaeFZ1ZlV5YUZVRHZNZ3pYWXRBUzhRWjhZMjBNZTdUaXIwcnByVnVMWC1TS3V3ZXhyUUJMdHFmWURXTURTMEt2Qm41TGUxcW1zb2dqcFZtdTFFelhHdlhHOGRLbFhodTcyZDhVVkdpSDBHekFhRU5BZk9oVnFaaThCbjV6cHMteVNOTVhOSGRHNm96cnFIRDQyR2EtanVhQUNOVkFOTVVjQm1ZN2QyYlZHdw?oc=5",
+      "source": "巴士的報",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Visit Macau on a Day Trip! (from Hong Kong) - Will Fly for Food",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNY3RuNkgwU1h6X0RnMXRFajZIcWhXLW10dGFJWFJsazlWX2RpazNDQlN3U2hUVWVUYXhTZHh6NjNUV1hqdHpHMDlpT0RGTmdNMGs4MEV1eUU0dFQ1ZHlMU0NNQ0VkcktZYjFqdkdhU2ZLTEVVYVhORFNmWTBoS2xOcTFLTWZqYnZFYjlZRjd3?oc=5",
+      "source": "Will Fly for Food",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-15",
+      "title": "Macau's A-Ma Cultural & Tourism Festival to start Oct 12 - The Macau Post Daily",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE53dXE5NzdubmFRZk9EN1ZJWWt4eXA5R25SQ3RYOUZPZTEzZGVwM29meXRmOE83c1dQT1lXcUY5UHEtc2ZlSzRoMlJ6amloMDcySzBF?oc=5",
+      "source": "The Macau Post Daily",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Agoda Astrological Travel Guide: Hidden Gems in Asia for Every Star Sign - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNWpPRklkb3dXMDN3MnhaRm5ubEhVUEw5TVVnQmVwMEs5MkIweXM1SWgxZElCOWRKb3I0T0pJZTFOYmphdUhzZTB2cDBoTUFZWWt5VHctV0tNeDdXbGVQLVNDQTd1OGVTWnpQY0RPUzMySm4zYVA2VXJHMXBnaUdDbS1NR1lLdjV1QUtwLUxQR3lZbTV2Vk96RmpadGlmVXc?oc=5",
+      "source": "Macau Business",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-09",
+      "title": "oneworld Partners with Popular App Timeshifter to Help Round the World Travellers Beat Jet Lag - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZmg3Z1ZWd2xCTjEyM01ablVuYU9yNkZEeXNWMmJ3RzJ5My1kRlJvTDRXczRoUEtFQjhLaHFoWE94cmZ1eWFjemFUNnVNbm5sb1JOR2NRMXlJT0RvN2kzcWpXYjY5TlVWVW1SVUlyOE9NaklZTVJxV1kyNkZmR2lOR2xTWFZaYVB4U29WUE01MDFNeG9OZjZDbkx5dkdOS1g5dXFwUHpZZFNpd1BGVmdzUzJ3Ym5JVjhzQVVUb0d4Njd1dw?oc=5",
+      "source": "Macau Business",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-05",
+      "title": "Macao Courts Malaysian Travellers with Muslim-Friendly Push and Multi-Destination Itineraries - Daily Express Malaysia",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQclJXejByanYwVlRYQlA3NE5DRmF4MHZBSzNZcllfZVZNY0N4N1VVdUg0dXhwem1lVmIxbGhXeEhQY2tIMlYwRU5pMS1vZVc3YUU4cXJfX2ViUWk4NE1La1VrMkdCdm14bmEwZDVpZE54UDFKTVFkSTJSRE45MXlVd1hnekJkbWR5ZU9IdS1nWlFEREpqWDMwa3JhN2hKaTNVc1ctVi1Qem52YmdvSlRJOTlUYzV1amhvbE11NXJyRW5nb0t6S0RnS2dsZHo4Unc1MVpNNw?oc=5",
+      "source": "Daily Express Malaysia",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Macao Economic, Trade and Tourism Investment Promotion Seminar in Indonesia The Signing of 36 Co-operation Agreements Open Up New Development Opportunities for Both Regions (Commerce and Investment Promotion Institute / ",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdjNYU09IZUpNNVBkTEp5ZG8yVlpvRHlTeml6UW4zdDJsc0V0R3F2cGdVR2tRQTFyQXRFOFlOMW9UNGdDYTRIeFFPUFpyOC1xRm5RZUcxcTc2UmU3MVY3T016QmQ5bW5lWUU3QmFjT0h4cVJIMmNkdnlCR0h6NTZnYUpVYW94bXRIRXJaNzNFaw?oc=5",
+      "source": "www.dst.gov.mo",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Macao Economic, Trade and Tourism Investment Promotion Seminar Successfully Hosted in Singapore Leading to the Signing of 74 Industry Co-operation Agreements – Macao SAR Government Portal - 澳門特別行政區政府入口網站",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBEYzVyOFFzTy1SZWlJLWhSeVhRb01FYktOVnkyX3Z6ejJ0TGJBSVNWTC1OTUNqSHFfNjFoWGZJdmFZdmt5LVVNb193?oc=5",
+      "source": "澳門特別行政區政府入口網站",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    }
+  ],
   "errors": [],
-  "notice": "Chưa có lần cập nhật từ RSS tìm kiếm. Kết quả RSS là chỉ mục liên kết, không phải review đã xác minh."
+  "notice": "Tự động phát hiện TIÊU ĐỀ + LINK qua Google News RSS, không phải bài viết gốc hoặc review đã xác minh. Nhấp liên kết để mở nguồn và tự đối chiếu tác giả/ngày viết. Reddit được mở trực tiếp, không scrape."
 }
