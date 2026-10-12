@@ -1,0 +1,115 @@
+{
+  "updatedAt": "2026-10-12",
+  "notice": "Các liên kết dưới đây là bài viết/thảo luận thật đã kiểm tra được đường dẫn; nội dung là quan điểm của tác giả. Việc đăng trong cộng đồng không xác minh người viết đã du lịch.",
+  "featured": [
+    {
+      "kind": "guide",
+      "date": "2026-09-29",
+      "title": "How to Spend 3 Days in Macau: A First-Timer's Itinerary",
+      "source": "What's On Macau",
+      "url": "https://whatsonmacau.com/three-day-macau-itinerary",
+      "description": "Lịch trình 3 ngày theo khu vực, gợi ý nhịp đi vừa phải. Bài hướng dẫn từ website độc lập; có thể chứa affiliate links.",
+      "verified": "Link và ngày cập nhật"
+    },
+    {
+      "kind": "discussion",
+      "date": "2026-09-28",
+      "title": "I built a free Macau trip planner — tell me what I'm missing",
+      "source": "Reddit · r/Macau",
+      "url": "https://www.reddit.com/r/Macau/comments/1wsm2cx/i_built_a_free_macau_trip_planner_tell_me_what_im/",
+      "description": "Thảo luận về trải nghiệm dùng trip planner, trong đó có nhu cầu thêm bản đồ/hình ảnh. Nội dung là bài của thành viên cộng đồng.",
+      "verified": "Link bài Reddit"
+    },
+    {
+      "kind": "discussion",
+      "date": "2026-07-27",
+      "title": "Visiting Macau in August, and have some questions",
+      "source": "Reddit · r/Macau",
+      "url": "https://www.reddit.com/r/Macau/comments/1v7rj4c/visiting_macau_in_august_and_have_some_questions/",
+      "description": "Trao đổi về giao thông, điểm tham quan và mức chi phí; thông tin mang tính cá nhân và có thể cũ.",
+      "verified": "Link bài Reddit"
+    },
+    {
+      "kind": "discussion",
+      "date": "2026-05-19",
+      "title": "Solo trip in Macau help",
+      "source": "Reddit · r/Macau",
+      "url": "https://www.reddit.com/r/Macau/comments/1thtue5/solo_trip_in_macau_help/",
+      "description": "Hỏi kinh nghiệm đi Macau một mình và khám phá văn hóa, không tập trung casino.",
+      "verified": "Link bài Reddit"
+    },
+    {
+      "kind": "discussion",
+      "date": "2026-01-12",
+      "title": "2 days in Macau",
+      "source": "Reddit · r/Macau",
+      "url": "https://www.reddit.com/r/Macau/comments/1qb58x2/2_days_in_macau/",
+      "description": "Lịch trình hai ngày do du khách đề xuất. Hữu ích để so sánh với nhịp độ thực tế; cần kiểm tra giờ và giá hiện tại.",
+      "verified": "Link bài Reddit"
+    },
+    {
+      "kind": "discussion",
+      "date": "2026-04-20",
+      "title": "Hong Kong 2 Days trip vs Macau",
+      "source": "Reddit · r/Macau",
+      "url": "https://www.reddit.com/r/Macau/comments/1sr334k/honkkong_2_days_trip_vs_macau/",
+      "description": "Trao đổi có cả ý kiến trái chiều về việc ghé Macau trong ngày từ Hong Kong.",
+      "verified": "Link bài Reddit"
+    }
+  ],
+  "topics": [
+    {
+      "title": "Bài mới trong r/Macau",
+      "subtitle": "Các bài đăng mới nhất, nhiều chủ đề địa phương",
+      "url": "https://www.reddit.com/r/Macau/new/"
+    },
+    {
+      "title": "Hỏi đáp lịch trình Macau",
+      "subtitle": "Reddit search · mới nhất · itinerary",
+      "url": "https://www.reddit.com/r/Macau/search/?q=itinerary&restrict_sr=1&sort=new"
+    },
+    {
+      "title": "Đi Macau tự túc",
+      "subtitle": "Reddit search · mới nhất · travel",
+      "url": "https://www.reddit.com/r/Macau/search/?q=travel&restrict_sr=1&sort=new"
+    },
+    {
+      "title": "Ẩm thực Macau",
+      "subtitle": "Reddit search · mới nhất · food",
+      "url": "https://www.reddit.com/r/Macau/search/?q=food&restrict_sr=1&sort=new"
+    },
+    {
+      "title": "Chi phí, giao thông",
+      "subtitle": "Reddit search · mới nhất · transport",
+      "url": "https://www.reddit.com/r/Macau/search/?q=transport&restrict_sr=1&sort=new"
+    },
+    {
+      "title": "Hỏi đáp Hong Kong – Macau",
+      "subtitle": "Reddit search · mới nhất · Macau",
+      "url": "https://www.reddit.com/r/travel/search/?q=Macau&restrict_sr=1&sort=new"
+    }
+  ],
+  "search": [
+    {
+      "title": "Tìm travel blogs mới trên Google",
+      "subtitle": "Tìm qua nguồn web, không crawl bài nguyên văn",
+      "url": "https://www.google.com/search?q=Macau+travel+blog+itinerary&tbs=qdr:m"
+    },
+    {
+      "title": "Tìm bài chia sẻ Macau bằng tiếng Việt",
+      "subtitle": "Tra web/blog tiếng Việt",
+      "url": "https://www.google.com/search?q=review+du+l%E1%BB%8Bch+Macau+t%E1%BB%B1+t%C3%BAc&tbs=qdr:m"
+    },
+    {
+      "title": "What's On Macau · trip ideas",
+      "subtitle": "Nguồn hướng dẫn độc lập",
+      "url": "https://whatsonmacau.com/three-day-macau-itinerary"
+    }
+  ],
+  "policy": {
+    "redditRSSStopsOn": "2026-11-13",
+    "announcement": "https://www.reddit.com/r/modnews/comments/1wubgvt/continuing_our_infrastructure_updates_whats/",
+    "apiChange": "https://www.reddit.com/r/redditdev/comments/1wubm4e/continuing_our_infrastructure_updates_what_developers_need_to_know/",
+    "note": "Reddit dự kiến ngừng RSS 13/11/2026. Không dựa vào RSS/API Reddit; mở trang tìm kiếm trực tiếp, không sao chép toàn bộ nội dung."
+  }
+}
