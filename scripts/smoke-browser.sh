@@ -24,4 +24,19 @@ grep -F 'Sự kiện &amp; review' /tmp/travel-notebook-city-dom.html >/dev/null
 grep -F 'Tour tự dẫn &amp; xuất report' /tmp/travel-notebook-city-dom.html >/dev/null || grep -F 'Tour tự dẫn & xuất report' /tmp/travel-notebook-city-dom.html >/dev/null
 grep -F 'id="city-tab-select"' /tmp/travel-notebook-city-dom.html >/dev/null
 grep -F 'city-bento' /tmp/travel-notebook-city-dom.html >/dev/null
-echo "Browser DOM smoke tests passed for universal homepage + Macau guide."
+# Confirm active itinerary and export UI render on their own route.
+"$CHROME" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3500 --dump-dom 'http://127.0.0.1:8765/macau/#guide' >/tmp/travel-notebook-guide-dom.html 2>/tmp/travel-notebook-chrome-guide.err
+grep -F 'id="guide-map"' /tmp/travel-notebook-guide-dom.html >/dev/null
+grep -F 'data-guide-drag=' /tmp/travel-notebook-guide-dom.html >/dev/null
+grep -F 'data-guide-export="print"' /tmp/travel-notebook-guide-dom.html >/dev/null
+grep -F 'Lịch trình ngày' /tmp/travel-notebook-guide-dom.html >/dev/null
+# All three concept query variants must keep working controls.
+for variant in minimal immersive bento; do
+ "$CHROME" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2300 --dump-dom "http://127.0.0.1:8765/?concept=$variant" >"/tmp/travel-$variant.html" 2>/dev/null
+ grep -F 'id="destination-country"' "/tmp/travel-$variant.html" >/dev/null
+ grep -F 'id="prep-tasks"' "/tmp/travel-$variant.html" >/dev/null
+ grep -F "data-concept=\"$variant\"" "/tmp/travel-$variant.html" >/dev/null
+done
+curl -fsS 'http://127.0.0.1:8765/design-lab/' | grep -F 'Minimal Editorial' > /dev/null
+echo "Browser smoke tests passed: global homepage, Macau bento, tour planner & 3 design variants."
+
