@@ -5,11 +5,11 @@ const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const norm=x=>String(x??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').toLowerCase().trim();
 const commons=(file,width)=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(file)+'?width='+width;
 const photos={
- hanoi:{url:commons('Hoan Kiem Lake photo.jpg',1400),credit:'Hà Nội · Wikimedia Commons'},
- tokyo:{url:commons('Rainbow Bridge as seen from Shiodome Tokyo.jpg',1200),credit:'Tokyo · Wikimedia Commons'},
- bangkok:{url:commons('WatArunAtSunset.jpg',1100),credit:'Bangkok · Wikimedia Commons'},
- macau:{url:commons('Macau - Senado Square.jpg',1300),credit:'Macau · Wikimedia Commons'},
- halong:{url:commons('Ha Long Bay, Vietnam, Boats.jpg',1100),credit:'Vịnh Hạ Long · Wikimedia Commons'}
+ hanoi:{url:commons('Hoan Kiem Lake photo.jpg',1400),credit:'Tranhuutukkt · CC BY-SA 4.0'},
+ tokyo:{url:commons('Rainbow Bridge as seen from Shiodome Tokyo.jpg',1200),credit:'Chris 73 · CC BY-SA 3.0'},
+ bangkok:{url:commons('WatArunAtSunset.jpg',1100),credit:'Jean-Marie Hullot · CC BY 3.0'},
+ macau:{url:commons('Macau - Senado Square.jpg',1300),credit:'kewl.lu · CC BY 2.0'},
+ halong:{url:commons('Ha Long Bay, Vietnam, Boats.jpg',1100),credit:'Vyacheslav Argenberg · CC BY 4.0'}
 };
 const images={'mo-macau':'macau','vn-hanoi':'hanoi','jp-tokyo':'tokyo','th-bangkok':'bangkok'};
 let query='',country='all',province='all',continent='all',status='all',expanded=false;
@@ -17,7 +17,7 @@ const option=(title,value,selected)=>'<option value="'+esc(value)+'"'+(value===s
 const countries=()=>option('Mọi quốc gia / vùng lãnh thổ','all',country)+countryNames.map(x=>option(x,x,country)).join('');
 const provinces=()=>option('Mọi tỉnh / khu vực','all',province)+[...new Set(destinations.filter(x=>country==='all'||x.country===country).map(x=>x.province))].sort((a,b)=>a.localeCompare(b,'vi')).map(x=>option(x,x,province)).join('');
 const issue=x=>'https://github.com/anatwork14/travel-repositories/issues/new?title='+encodeURIComponent('[Đề xuất điểm đến] '+x);
-const image=(name,label,cls='')=>photos[name]?'<img class="'+cls+'" src="'+esc(photos[name].url)+'" alt="'+esc(label)+'" loading="lazy" decoding="async" onerror="this.style.display=\'none\'">':'';
+const image=(name,label,cls='')=>photos[name]?'<img class="'+cls+'" src="'+esc(photos[name].url)+'" alt="'+esc(label)+'" loading="'+(cls==='v3-hero-photo'?'eager':'lazy')+'" '+(cls==='v3-hero-photo'?'fetchpriority="high" ':'')+'decoding="async" onerror="this.style.display=\'none\'">':'';
 function tile(x){
  const live=x.status==='published',key=images[x.id],p=photos[key];
  const art=p?'<div class="v3-card-photo">'+image(key,'Khung cảnh '+x.name)+'<span class="v3-photo-credit">'+esc(p.credit)+'</span></div>':
@@ -46,7 +46,7 @@ export function renderHome(){
  '<section class="v3-how"><div class="container"><div class="v3-section-heading"><div><span class="v3-eyebrow">NOT JUST WHERE, BUT HOW</span><h2>Đi theo cách<br><em>của bạn.</em></h2></div><p>Lên kế hoạch vừa đủ, giữ thời gian cho trải nghiệm tự nhiên và biết những lưu ý thực tế trước khi đi.</p></div><div class="v3-how-grid"><a href="#trip-checklist" class="v3-how-card first"><span>01 / PREPARE</span><b>◷</b><h3>Sẵn sàng lên đường</h3><p>Giấy tờ, thời tiết, hành lý, ngân sách và thông tin thiết yếu.</p><strong>Mở checklist ↗</strong></a><a href="./macau/#guide" class="v3-how-card second"><span>02 / EXPLORE</span><b>⌖</b><h3>Tự dẫn đường</h3><p>Bản đồ, lịch trình theo ngày, điểm dừng và hướng dẫn theo chặng.</p><strong>Thử ở Macau ↗</strong></a><a href="./macau/#intelligence" class="v3-how-card third"><span>03 / UNDERSTAND</span><b>✧</b><h3>Hiểu trước khi đi</h3><p>Thông tin đáng tin cậy, dữ liệu có nguồn và cả điều tiêu cực.</p><strong>Xem dữ liệu ↗</strong></a></div></div></section>'+
  renderPrep()+
  '<section class="v3-closing"><div class="container"><span class="v3-eyebrow">BUILT FOR CURIOUS TRAVELERS</span><h2>Đi để thấy.<br><em>Không chỉ để đến.</em></h2><p>Thông tin rõ ràng. Cảm hứng vừa đủ. Quyết định luôn là của bạn.</p><a class="pill" href="#explore">Khám phá ngay ↗</a></div></section></main>'+
- '<footer class="v3-footer"><div class="container v3-footer-columns"><div><a class="v3-logo" href="./"><span class="v3-mark">✳</span> notebook<span class="v3-dot">.</span>travel</a><p>Discover a place. Make it yours.</p></div><div><b>KHÁM PHÁ</b><a href="#inspiration">Cảm hứng</a><a href="#explore">Điểm đến</a><a href="#trip-checklist">Checklist</a></div><div><b>MINH BẠCH</b><a href="https://github.com/anatwork14/travel-repositories">GitHub repository ↗</a><a href="./macau/#sources">Nguồn dữ liệu Macau ↗</a><span>Không thu thập thông tin cá nhân</span></div></div><div class="container v3-footer-bottom">© 2026 Travel Notebook. Independent travel research. <span>MADE TO WANDER ✳</span></div></footer>';
+ '<footer class="v3-footer"><div class="container v3-footer-columns"><div><a class="v3-logo" href="./"><span class="v3-mark">✳</span> notebook<span class="v3-dot">.</span>travel</a><p>Discover a place. Make it yours.</p></div><div><b>KHÁM PHÁ</b><a href="#inspiration">Cảm hứng</a><a href="#explore">Điểm đến</a><a href="#trip-checklist">Checklist</a></div><div><b>MINH BẠCH</b><a href="https://github.com/anatwork14/travel-repositories">GitHub repository ↗</a><a href="./macau/#sources">Nguồn dữ liệu Macau ↗</a><a href="./design-lab/">Design Lab · 3 concept ↗</a><span>Không thu thập thông tin cá nhân</span></div></div><div class="container v3-footer-bottom">© 2026 Travel Notebook. Independent travel research. <span>MADE TO WANDER ✳</span></div></footer>';
 }
 function renderResults(){
  const target=document.getElementById('destination-results');if(!target)return;
