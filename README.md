@@ -128,3 +128,39 @@ The **homepage no longer defaults to Macau**. It now provides a generic entry fo
 ### UX principles
 
 See [travel experience & UX research](docs/travel-experience-ux-research.md). The research differentiates peer-reviewed memorable-tourism factors and official pre-travel checklists from **design hypotheses** that should be validated through user testing. Accessibility aims for WCAG 2.2 and progressive disclosure rather than forcing all checklist tasks onto the first screen.
+
+
+## October 2026 — Modern Travel Editorial V3 (visual redesign)
+
+**Public production:** https://travel-repositories.vercel.app/ · **Design Lab:** https://travel-repositories.vercel.app/design-lab/
+
+This is a major redesign of the global homepage, the Macau chapter overview and the self-guided itinerary. It is not a complete framework migration or rewrite of the underlying data. Existing Macau price, food, destination, event, review, source, readiness checklist and report-export functionality remain available.
+
+### UI directions available for review
+
+| Path | Style |
+| --- | --- |
+| `/` | Modern Travel Editorial (production hybrid) |
+| `/?concept=minimal` | Minimal Editorial (quiet typography and white space) |
+| `/?concept=immersive` | Immersive Travel (full-bleed photography) |
+| `/?concept=bento` | Modern Bento (asymmetric card layout) |
+| `/design-lab/` | Comparative design previews, decision and live links |
+
+All three alternatives use the same real registry, filtering and checklist logic; they are visually different presentations, not three separate forks.
+
+### Implementation
+
+- `assets/editorial-home.js` creates a destination-neutral hero with a primary search input, region/availability selectors, progressive destination directory and editorial interest filters. Interest filters are **inspirational editorial groupings**, not an AI ranking, review score or researched tour offer.
+- `assets/design-v3.css` provides visual tokens and complete responsive styling for the homepage, city overview, map-first route view, concept variants and focus states.
+- `assets/app.js` now renders the Macau bento summary with seven working links into existing chapter tabs, while retaining detailed pricing, events and safety notices.
+- `assets/guide.js` lets users drag-and-drop stops in desktop browsers, with existing accessible arrow buttons on desktop/mobile. Numbered map pins show order; nearby leg distances show **straight-line kilometers**, not navigation ETA or road distance. Google Maps is still the source of directions.
+- `docs/design-system-v3.md` documents primary rationale, three concept tradeoffs, source-photo attribution and specific UX test scenarios.
+- `scripts/smoke-browser.sh` now tests the global homepage, Macau overview, guide/map/export DOM and all three concept variant pages in headless Chrome.
+
+### Media / data transparency
+
+Travel photographs are hotlinked to Wikimedia Commons, with named photographer credits/licensing in `docs/design-system-v3.md`. Some images are CC BY-SA and require preserving their license conditions for reuse. Do not replicate copyrighted design references from Awwwards, Behance or user-supplied inspiration screenshots. Planned destination cards remain labelled as planned.
+
+### Unfinished validation (future work)
+
+Headless smoke checks verify page rendering but are **not equivalent to visual regression tests, Lighthouse performance measurement, accessibility audit or user studies**. Next steps: mobile visual QA on real devices, task testing with 5–8 travellers, image optimization/self-hosting with licenses, and generalizing city data rendering beyond Macau.
