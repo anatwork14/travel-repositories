@@ -1,5 +1,4 @@
 /* Travel Notebook v3 — Modern Travel Editorial. Warm paper, forest ink, terracotta, expressive photography. */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400,20,1;9..144,500,20,1;9..144,600,20,1;9..144,700,20,1&family=Manrope:wght@400;500;600;700;800&display=swap');
 :root{--ink:#25372f;--muted:#738077;--green:#254b3d;--mint:#eaf1e8;--cream:#f8f7f3;--gold:#d9a879;--line:#e1e2d9;--white:#fff;--soft:#f5f2e9;--v3-ink:#1d3029;--v3-moss:#2b5142;--v3-muted:#69766f;--v3-paper:#f8f7f2;--v3-clay:#ba6645;--v3-cream:#ebe8dd}
 html{scroll-behavior:smooth;scroll-padding-top:96px}
 body{font-family:'Manrope',system-ui,sans-serif;background:var(--v3-paper);color:var(--v3-ink)}
