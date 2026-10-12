@@ -13,6 +13,8 @@ for _ in {1..30}; do if curl -fsS http://127.0.0.1:8765/ >/dev/null; then break;
 "$CHROME" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3500 --dump-dom 'http://127.0.0.1:8765/' >/tmp/travel-notebook-home-dom.html 2>/tmp/travel-notebook-chrome-home.err
 grep -F 'Đi xa một chút.' /tmp/travel-notebook-home-dom.html >/dev/null
 grep -F 'id="destination-query"' /tmp/travel-notebook-home-dom.html >/dev/null
+grep -F 'id="theme-trigger"' /tmp/travel-notebook-home-dom.html >/dev/null
+grep -F 'Màu sắc' /tmp/travel-notebook-home-dom.html >/dev/null
 grep -F 'v3-hero-search' /tmp/travel-notebook-home-dom.html >/dev/null
 grep -F 'id="destination-country"' /tmp/travel-notebook-home-dom.html >/dev/null
 grep -F 'id="destination-results"' /tmp/travel-notebook-home-dom.html >/dev/null
@@ -24,6 +26,7 @@ grep -F 'Sự kiện &amp; review' /tmp/travel-notebook-city-dom.html >/dev/null
 grep -F 'Tour tự dẫn &amp; xuất report' /tmp/travel-notebook-city-dom.html >/dev/null || grep -F 'Tour tự dẫn & xuất report' /tmp/travel-notebook-city-dom.html >/dev/null
 grep -F 'id="city-tab-select"' /tmp/travel-notebook-city-dom.html >/dev/null
 grep -F 'city-bento' /tmp/travel-notebook-city-dom.html >/dev/null
+grep -F 'id="theme-trigger"' /tmp/travel-notebook-city-dom.html >/dev/null
 # Confirm active itinerary and export UI render on their own route.
 "$CHROME" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3500 --dump-dom 'http://127.0.0.1:8765/macau/#guide' >/tmp/travel-notebook-guide-dom.html 2>/tmp/travel-notebook-chrome-guide.err
 grep -F 'id="guide-map"' /tmp/travel-notebook-guide-dom.html >/dev/null
@@ -38,5 +41,10 @@ for variant in minimal immersive bento; do
  grep -F "data-concept=\"$variant\"" "/tmp/travel-$variant.html" >/dev/null
 done
 curl -fsS 'http://127.0.0.1:8765/design-lab/' | grep -F 'Minimal Editorial' > /dev/null
-echo "Browser smoke tests passed: global homepage, Macau bento, tour planner & 3 design variants."
+# Real theme interaction: open, select Ocean/Midnight, localStorage persistence and Escape.
+"$CHROME" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3500 --dump-dom 'http://127.0.0.1:8765/qa/theme-typography.html' >/tmp/travel-notebook-theme-qa.html 2>/tmp/travel-theme-qa.err
+grep -F 'data-qa-status="PASS"' /tmp/travel-notebook-theme-qa.html >/dev/null || { echo "::error::Palette interaction failed"; grep -o 'data-qa-error="[^"]*"' /tmp/travel-notebook-theme-qa.html || true; exit 1; }
+"$CHROME" --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --window-size=390,844 --virtual-time-budget=3500 --dump-dom 'http://127.0.0.1:8765/qa/theme-typography.html' >/tmp/travel-notebook-theme-mobile.html 2>/tmp/travel-theme-qa-mobile.err
+grep -F 'data-qa-status="PASS"' /tmp/travel-notebook-theme-mobile.html >/dev/null || { echo "::error::Mobile header/palette failed"; grep -o 'data-qa-error="[^"]*"' /tmp/travel-notebook-theme-mobile.html || true; exit 1; }
+echo "Browser tests passed: responsive palette interactions, Vietnamese typography, homepage, Macau guide and three design variants."
 
