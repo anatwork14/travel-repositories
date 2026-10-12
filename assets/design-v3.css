@@ -225,3 +225,69 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{ou
 @media(max-width:700px){.v3-header{height:66px;padding:0 18px}.v3-logo{font-size:20px}.v3-mark{font-size:25px;margin-right:4px}.v3-header nav{display:none}.v3-nav-cta{font-size:11px}.v3-hero{grid-template-columns:1fr}.v3-hero-content{padding:56px 20px 32px}.v3-hero h1{font-size:clamp(52px,11.3vw,77px)}.v3-hero-content>p{font-size:13px}.v3-hero-visual{min-height:350px;max-height:420px}.v3-hero-caption{left:25px;bottom:30px}.v3-hero-caption strong{font-size:44px}.v3-hero-stats{margin-top:25px}.v3-marquee{gap:10px;font-size:9px}.v3-marquee span:nth-of-type(2),.v3-marquee b{display:none}.v3-inspiration,.v3-directory,.v3-how{padding:62px 0}.v3-section-heading{display:block;margin-bottom:26px}.v3-section-heading>p{max-width:600px;margin-top:16px}.v3-section-heading h2{font-size:clamp(43px,10vw,60px)}.v3-posters{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.v3-poster{min-height:280px}.v3-poster-title{bottom:35px;left:13px}.v3-poster-title b{font-size:29px}.v3-poster-title span{font-size:10px}.v3-poster-region{top:12px;left:13px}.v3-photo-credit{left:13px}.v3-filter-selects{grid-template-columns:1fr}.v3-destination-grid{grid-template-columns:1fr}.v3-card-photo,.v3-card-abstract{height:220px}.v3-filters{padding:16px}.v3-how-card{min-height:255px}.v3-footer-columns{grid-template-columns:1fr 1fr}.v3-footer-columns>div:first-child{grid-column:span 2}.v3-footer-bottom{flex-wrap:wrap}.v3-closing{padding:75px 0}.city-bento{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.city-bento>a,.city-bento>div{padding:19px;min-height:220px}.city-bento .bento-large,.city-bento .bento-food,.city-bento .bento-cost,.city-bento .bento-map,.city-bento .bento-safe,.city-bento .bento-event,.city-bento .bento-route{grid-column:span 2}.city-bento .bento-large{min-height:340px}.city-bento .bento-food{min-height:295px}.city-bento .bt-title{font-size:35px}.city-route-cta{display:block}.city-route-cta a{display:inline-block;margin-top:18px}}
 @media(max-width:420px){.v3-hero h1{font-size:48px}.v3-hero-search button{padding:13px 12px;font-size:11px}.v3-hero-search input{font-size:13px}.v3-hero-stats{gap:17px}.v3-hero-stats small{font-size:8px}.v3-hero-stats b{font-size:22px}.v3-poster{min-height:240px}.v3-poster-title b{font-size:25px}.v3-poster-title span{display:none}.v3-place-body h3{font-size:27px}}
 @media(prefers-reduced-motion:reduce){.v3-poster img,.v3-place-card{transition:none!important}html{scroll-behavior:auto}}
+
+
+/* Design Lab: alternate directions. Production defaults to Modern Travel Editorial. */
+html[data-concept="minimal"]{--v3-paper:#fffdf9;--v3-moss:#282a25}
+html[data-concept="minimal"] .v3-hero{display:block;background:#fcfbf6;min-height:0}
+html[data-concept="minimal"] .v3-hero-content{margin:auto;max-width:1180px;padding:115px 50px 100px}
+html[data-concept="minimal"] .v3-hero h1{font-size:clamp(70px,8.5vw,130px);max-width:980px}
+html[data-concept="minimal"] .v3-hero h1 em{color:#876f5e}
+html[data-concept="minimal"] .v3-hero-visual,html[data-concept="minimal"] .v3-marquee{display:none}
+html[data-concept="minimal"] .v3-inspiration{border-top:1px solid #e4e1d9}
+html[data-concept="minimal"] .v3-directory{background:#f7f6f2}
+html[data-concept="minimal"] .v3-place-card{border-radius:0;box-shadow:none}
+html[data-concept="minimal"] .v3-card-photo,html[data-concept="minimal"] .v3-card-abstract{height:145px}
+html[data-concept="minimal"] .v3-poster{border-radius:0}
+html[data-concept="minimal"] .v3-how-card{border-radius:0}
+html[data-concept="immersive"] .v3-hero{display:block;position:relative;background:#123527;overflow:hidden}
+html[data-concept="immersive"] .v3-hero-content{position:relative;z-index:3;max-width:none;min-height:790px;width:min(1180px,calc(100% - 70px));padding:95px 0 90px;margin:auto;color:#fff}
+html[data-concept="immersive"] .v3-hero h1{color:#fff;max-width:1050px;font-size:clamp(68px,8vw,128px)}
+html[data-concept="immersive"] .v3-hero h1 em{color:#e4c39f}
+html[data-concept="immersive"] .v3-hero-content>p{color:#eef3ea;max-width:620px}
+html[data-concept="immersive"] .v3-hero .v3-eyebrow{color:#e3ceac}
+html[data-concept="immersive"] .v3-suggest,html[data-concept="immersive"] .v3-suggest button{color:#f1eee4;border-color:#b9c6bb}
+html[data-concept="immersive"] .v3-hero-stats{border-color:#fff5}
+html[data-concept="immersive"] .v3-hero-stats>span{color:#f1efdd}
+html[data-concept="immersive"] .v3-hero-visual{position:absolute;inset:0;height:100%;min-height:0}
+html[data-concept="immersive"] .v3-hero-shade{background:linear-gradient(90deg,#09271fe3 0%,#123728b0 47%,#0c2b204b 100%)}
+html[data-concept="immersive"] .v3-hero-caption{left:auto;right:45px;bottom:40px;text-align:right}
+html[data-concept="immersive"] .v3-floating-postcard{display:none}
+html[data-concept="immersive"] .v3-posters{grid-template-columns:repeat(4,1fr)}
+html[data-concept="immersive"] .v3-poster{min-height:500px}
+html[data-concept="bento"] .v3-hero{grid-template-columns:57% 43%;background:#f1f0e7}
+html[data-concept="bento"] .v3-hero-content{padding:55px 5vw 38px 6vw}
+html[data-concept="bento"] .v3-hero h1{font-size:clamp(52px,5.5vw,83px)}
+html[data-concept="bento"] .v3-hero-visual{border:15px solid #f1f0e7;border-radius:25px;min-height:610px}
+html[data-concept="bento"] .v3-posters{grid-template-columns:repeat(6,1fr);grid-auto-rows:200px}
+html[data-concept="bento"] .v3-poster{min-height:0;grid-column:span 2;grid-row:span 1;border-radius:16px}
+html[data-concept="bento"] .v3-poster:first-child{grid-column:span 3;grid-row:span 2}
+html[data-concept="bento"] .v3-poster:nth-child(2){grid-column:span 3}
+html[data-concept="bento"] .v3-poster:nth-child(3),html[data-concept="bento"] .v3-poster:nth-child(4){grid-column:span 3}
+html[data-concept="bento"] .v3-poster-title b{font-size:31px}
+html[data-concept="bento"] .v3-destination-grid{grid-template-columns:repeat(4,1fr)}
+html[data-concept="bento"] .v3-place-card:first-child{grid-column:span 2;grid-row:span 2}
+html[data-concept="bento"] .v3-place-card:first-child .v3-card-photo{height:415px}
+html[data-concept="bento"] .v3-place-card{border-radius:14px}
+@media(max-width:950px){
+html[data-concept="bento"] .v3-destination-grid{grid-template-columns:repeat(2,1fr)}
+html[data-concept="bento"] .v3-place-card:first-child{grid-column:span 1;grid-row:span 1}
+html[data-concept="bento"] .v3-place-card:first-child .v3-card-photo{height:198px}
+html[data-concept="bento"] .v3-hero{grid-template-columns:1fr 42%}
+}
+@media(max-width:700px){
+html[data-concept="minimal"] .v3-hero-content{width:calc(100% - 36px);padding:66px 0}
+html[data-concept="minimal"] .v3-hero h1{font-size:clamp(55px,11vw,76px)}
+html[data-concept="immersive"] .v3-hero-content{width:calc(100% - 36px);min-height:670px;padding:80px 0 90px}
+html[data-concept="immersive"] .v3-hero h1{font-size:clamp(55px,11vw,76px)}
+html[data-concept="immersive"] .v3-hero-caption{right:20px}
+html[data-concept="immersive"] .v3-posters{grid-template-columns:repeat(2,1fr)}
+html[data-concept="immersive"] .v3-poster{min-height:290px}
+html[data-concept="bento"] .v3-hero{grid-template-columns:1fr}
+html[data-concept="bento"] .v3-hero-visual{height:330px;min-height:330px;border:10px solid #f1f0e7}
+html[data-concept="bento"] .v3-posters{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+html[data-concept="bento"] .v3-poster:first-child{grid-column:span 2;grid-row:span 2}
+html[data-concept="bento"] .v3-poster:nth-child(2),html[data-concept="bento"] .v3-poster:nth-child(3),html[data-concept="bento"] .v3-poster:nth-child(4){grid-column:span 1}
+html[data-concept="bento"] .v3-poster:nth-child(4){grid-column:span 2}
+html[data-concept="bento"] .v3-destination-grid{grid-template-columns:1fr}
+}
