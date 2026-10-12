@@ -164,3 +164,15 @@ Travel photographs are hotlinked to Wikimedia Commons, with named photographer c
 ### Unfinished validation (future work)
 
 Headless smoke checks verify page rendering but are **not equivalent to visual regression tests, Lighthouse performance measurement, accessibility audit or user studies**. Next steps: mobile visual QA on real devices, task testing with 5–8 travellers, image optimization/self-hosting with licenses, and generalizing city data rendering beyond Macau.
+
+
+## October 2026 — Header palette & Vietnamese-first typography
+
+- **Visible color button in the header** across the global homepage, Macau city page and Design Lab: `Màu sắc · [current theme]` on desktop, `Màu` on mobile. Select Forest, Ocean, Sunset, Lavender, Sakura or Midnight; all choices persist with localStorage, no account required.
+- The picker mounts on DOMContentLoaded after the ES module app builds its header, preventing a race where a deferred script ran too early at `document.readyState === "interactive"`.
+- **New type system:** `Be Vietnam Pro` for main headings, articles, navigation, cards, controls, and the logo; `Lora Italic` only for selective editorial-emphasis spans. Removed unused Google Fonts CSS imports of Fraunces, Manrope, Playfair Display and DM Sans. All display and body headings have less cramped letter spacing and enough line height for Vietnamese diacritics.
+- Fonts are loaded once through Google Fonts with `font-display:swap`, with robust system/Georgia fallbacks. No font files are included in the repository.
+- `assets/typography-v4.css` centralizes typography and header palette responsive behavior; it is loaded after theme colors, and shared by homepage, Macau and Design Lab.
+- `qa/theme-typography.html` and `scripts/smoke-browser.sh` verify the selector is inserted into the actual header, switching theme updates document state, it persists in localStorage, Escape closes the panel, Vietnamese body/header font declarations apply and the button fits a 390px viewport.
+
+Sources: [Be Vietnam Pro project](https://github.com/bettergui/BeVietnamPro) and [Lora type family](https://github.com/cyrealtype/Lora-Cyrillic), each under SIL Open Font License.
