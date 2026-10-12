@@ -291,3 +291,23 @@ html[data-concept="bento"] .v3-poster:nth-child(2),html[data-concept="bento"] .v
 html[data-concept="bento"] .v3-poster:nth-child(4){grid-column:span 2}
 html[data-concept="bento"] .v3-destination-grid{grid-template-columns:1fr}
 }
+
+/* Unified navigation on both city and atlas screens */
+body[data-page=city] .city-v3-header{height:84px;padding:0 max(4.5vw,28px);background:#fafaf6f4}
+body[data-page=city] .city-v3-header nav{display:flex;gap:30px;align-items:center}
+body[data-page=city] .city-v3-header nav a{color:#52665b;font-weight:800;font-size:12px}
+body[data-page=city] .city-v3-header .v3-nav-cta{font-size:12px}
+body[data-page=city] .tabs-shell{top:84px}
+body[data-page=city] .city-v3-header .v3-logo{font-size:23px;letter-spacing:-.07em}
+body[data-page=city] .v3-footer{border-top:1px solid #e2e5db;padding:65px 0 25px;color:#243b30}
+body[data-page=city] .v3-footer .v3-footer-columns>div p{margin:0;color:#738372}
+body[data-page=city] .v3-footer .v3-logo{font-size:24px;color:#213e31}
+body[data-page=city] .v3-footer a{color:#31513d}
+body[data-page=city] .v3-footer-bottom{color:#788779}
+@media(max-width:700px){
+body[data-page=city] .city-v3-header{height:66px;padding:0 18px}
+body[data-page=city] .city-v3-header nav{display:none}
+body[data-page=city] .city-v3-header .v3-logo{font-size:19px}
+body[data-page=city] .city-v3-header .v3-nav-cta{font-size:11px}
+body[data-page=city] .tabs-shell{top:66px}
+}
