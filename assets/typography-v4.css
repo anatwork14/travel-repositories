@@ -1,0 +1,177 @@
+/*
+ * Travel Notebook typography v4
+ * Be Vietnam Pro: modern, Vietnamese-native headings + UI copy.
+ * Lora italic: small editorial signature, only where deliberately emphasized.
+ * Keep font-fallback safe when Google Fonts is unreachable.
+ */
+:root {
+  --font-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-editorial: "Lora", Georgia, "Times New Roman", serif;
+}
+html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
+body, button, input, textarea, select { font-family:var(--font-body); }
+body { font-size: 14px; line-height: 1.7; font-weight: 400; }
+p { line-height: 1.8; }
+h1,h2,h3,h4,.serif,
+.v3-hero h1,
+.v3-section-heading h2,
+.v3-closing h2,
+.city-bento .bt-title,
+.v3-poster-title b,
+.v3-place-body h3,
+.v3-how-card h3,
+.v3-hero-caption strong,
+.city-route-cta h3,
+.city-bento .bt-decoration,
+.city-fact-pill strong,
+.v3-hero-stats b,
+.value-grid h3,
+body[data-page=city] .card-body h3,
+body[data-page=city] .section-header h2,
+body[data-page=home] .prep-top h2,
+body[data-page=home] .prep-top h2 em,
+.theme-panel-head strong,
+.lab-nav h1,.hero h1,
+.mock h3,.details h2,.decision h2 {
+  font-family: var(--font-heading);
+  font-optical-sizing: auto;
+  letter-spacing: -.038em;
+  font-weight: 700;
+}
+h1,h2,h3,h4 { line-height:1.21; }
+.v3-hero h1 {
+  font-weight: 700;
+  line-height:1.17;
+  letter-spacing: -.06em;
+  font-size:clamp(51px,5.3vw,88px);
+}
+.v3-section-heading h2, .v3-closing h2 {
+  font-weight:700;
+  line-height:1.17;
+  letter-spacing:-.05em;
+}
+.v3-hero h1 em,
+.v3-section-heading h2 em,
+.v3-closing h2 em,
+body[data-page=city] .hero h1 em,
+.prep-top h2 em,
+.hero h1 em {
+  font-family:var(--font-editorial);
+  font-style:italic;
+  font-weight:500;
+  letter-spacing:-.055em;
+}
+.v3-logo,.brand,.lab-logo {
+  font-family:var(--font-body);
+  font-weight:800;
+  letter-spacing:-.065em;
+}
+.v3-place-body h3,
+.v3-poster-title b,
+.v3-how-card h3,
+.city-bento .bt-title {
+  font-weight:700;
+  letter-spacing:-.038em;
+  line-height:1.24;
+}
+.v3-hero-caption strong {
+  font-size:clamp(36px,3.8vw,50px);
+  font-weight:700;
+}
+.v3-hero-content>p,.v3-section-heading>p,
+.city-bento .bt-copy,
+.v3-place-body>p,
+body[data-page=city] .card-body p {
+  font-family:var(--font-body);
+  letter-spacing:0;
+}
+.v3-place-meta,.v3-eyebrow,.eyebrow,.v3-status,.v3-photo-credit,
+.v3-poster-region,.v3-how-card>span,.city-overview-label,
+.v3-hero-stats small {
+  font-family:var(--font-body);
+  letter-spacing:.085em;
+  font-weight:700;
+}
+.v3-header nav a,.v3-nav-cta,.v3-hero-search button,
+.v3-place-bottom a,.tab,.chip,.pill,.theme-trigger {
+  font-family:var(--font-body);
+  font-weight:700;
+}
+/* Keep accent glyphs from clipping; maintain accessible mobile titles. */
+body[data-page=city] .hero h1 {line-height:1.16;letter-spacing:-.057em;font-size:clamp(53px,6.8vw,95px);}
+body[data-page=city] .city-bento .bento-large .bt-title,
+body[data-page=city] .city-bento .bento-food .bt-title {line-height:1.19;}
+body[data-page=city] .hero-inner {overflow:visible;}
+body[data-page=home] .prep-top h2 em {font-family:var(--font-editorial);font-weight:500;}
+/* Visible, first-class theme selector in header. */
+.v3-header {gap:18px;}
+.v3-header #theme-switcher {
+  margin-left:auto;
+  margin-right:0;
+  order:3;
+  flex:0 0 auto;
+}
+.v3-header .v3-nav-cta {order:2;white-space:nowrap;margin-left:0;}
+.v3-header nav {order:1;margin-left:auto;}
+.v3-header .v3-logo {order:0;}
+.v3-header .theme-trigger {
+  min-height:44px;
+  padding:10px 14px;
+  gap:7px;
+  font:700 12px var(--font-body);
+  border-radius:11px;
+  background:var(--tone-sheet);
+  color:var(--tone-ink);
+  border:1px solid var(--tone-line);
+  box-shadow:0 2px 8px #1224160c;
+}
+.theme-trigger-icon {
+  display:inline-grid;
+  place-items:center;
+  font-size:20px;
+  width:23px;
+  height:23px;
+  color:var(--tone-accent);
+}
+.theme-trigger-title,.theme-trigger-name {
+  display:inline-block;
+}
+.theme-trigger-name {color:var(--tone-muted);font-size:11px;}
+.theme-chevron {font-size:13px;color:var(--tone-muted);}
+.v3-header .theme-trigger:hover,
+.v3-header .theme-trigger[aria-expanded=true] {
+  background:var(--tone-soft);
+  border-color:var(--tone-accent);
+}
+.v3-header .theme-panel {
+  right:0;
+  top:calc(100% + 12px);
+  font-family:var(--font-body);
+  box-shadow:0 18px 55px #0b1b2240;
+}
+.v3-header .theme-panel-head strong {font-family:var(--font-body);font-weight:800;font-size:17px;}
+.theme-options .theme-option-copy strong {font-family:var(--font-body);font-size:12px;letter-spacing:0;}
+.theme-panel .theme-privacy {font-size:11px;}
+@media(max-width:1100px){
+  .v3-header nav,body[data-page=city] .city-v3-header nav {display:none!important;}
+}
+@media(max-width:700px){
+ .v3-header,body[data-page=city] .city-v3-header{gap:10px;}
+ .v3-header .v3-nav-cta,body[data-page=city] .city-v3-header .v3-nav-cta{display:none;}
+ .v3-header .theme-trigger{min-height:44px;padding:9px 12px;}
+ .v3-header .theme-trigger .theme-trigger-title{display:inline-flex!important;font-size:0;}
+ .v3-header .theme-trigger .theme-trigger-title::after{content:"Màu";font-size:12px;}
+ .v3-header .theme-trigger .theme-trigger-name,.v3-header .theme-trigger .theme-chevron{display:none!important;}
+ .v3-header .theme-trigger-icon{display:inline-grid!important;}
+ .v3-header .theme-panel{right:0;width:min(345px,calc(100vw - 28px));}
+ .v3-logo,body[data-page=city] .city-v3-header .v3-logo{font-size:19px;}
+ .v3-hero h1{font-size:clamp(43px,10.5vw,70px);line-height:1.2;}
+ body[data-page=city] .hero h1{font-size:clamp(43px,9.6vw,69px);line-height:1.2;}
+ .v3-section-heading h2{font-size:clamp(35px,8.5vw,54px);}
+ .v3-how-card h3{font-size:26px;}
+}
+/* No movement is needed for choosing a color. */
+@media(prefers-reduced-motion:reduce){
+ .theme-panel,.theme-trigger{animation:none;transition:none;}
+}
