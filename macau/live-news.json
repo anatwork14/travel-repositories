@@ -1,8 +1,29 @@
 {
-  "updatedAt": "2026-10-13T00:46:06+00:00",
-  "lastAttemptAt": "2026-10-13T00:46:06+00:00",
+  "updatedAt": "2026-10-13T10:41:57+00:00",
+  "lastAttemptAt": "2026-10-13T10:41:57+00:00",
   "sourceCount": 5,
   "items": [
+    {
+      "date": "2026-10-13",
+      "title": "“Where culture flourishes, happiness happens” – Book for Book",
+      "url": "http://www.icm.gov.mo/en/events/detail/11971",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Macao’s experience as a UNESCO Creative City of Gastronomy showcased at World Food Forum flagship event",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JMdv0wE",
+      "source": "Macao SAR Government · English news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Global Tourism Economy Forum returns to Macau after Harbin - Macau Business",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPU2tkeXBFQ0lqWHFnNVJJbnlZV1c4N1VabFVEY01wZ2h2MXhjVWFrSHdxSG5xd0w5bURlWmVyZ2FCeWNQSFF4MzFxdkVyN1NQVVJxekY5XzZ2b1l3NzFCU2x2N3FueldST2E3bG1DWXV6aDQ1cWxPLWIyVmJJRlpaal9CbWZSdXVCNEJRTE53?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
     {
       "date": "2026-10-12",
       "title": "The First Ordinary Plenary Meeting of the Committee for the Development of Conventions and Exhibitions in 2026",
@@ -25,20 +46,6 @@
       "kind": "RSS headline"
     },
     {
-      "date": "2026-10-12",
-      "title": "Robot Dogs Are Coming to The Venetian Macau to Guide Tourists Through the Resort - Rus Tourism News",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS3ZEQldxV3lEZ1NTWllLdENNZ3Q4VTUtMFBKSmJJdFVDaW1wRFdXRm9kX2JfM2hSTm9FM25fdmNNMGJJR2lnTzNUN0JyMjZfOEx2UUNyZTY1UWJ5S21HbU9aeTNFdDV5VnZNbHIwVU1sQjhiZWhSQWxGWGNlLWhrdnNDS2NnWUVGdTVJV3NNTlZRRFlmX0F2UDJibEF2VFVpM0llbWw0WmM0WkNWUkVGQ1JUcFZGV25MY1YxQkdFeTQ?oc=5",
-      "source": "Google News · Macau travel coverage",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-12",
-      "title": "Global Tourism Economy Forum returns to Macau Thursday - The Macau Post Daily",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5PcHNaMVY4Tmc4SWVOSmtmUU1zMUdiaGF2eG1oWWE2QUJWZnhneDZxbFF3elBUeUxsVVcyckd1SHQ3WmQ0cEJzaEtQU2dzejZIS1ln?oc=5",
-      "source": "Google News · Macau travel coverage",
-      "kind": "RSS headline"
-    },
-    {
       "date": "2026-10-09",
       "title": "Macao Sets National Day Tourism Records on October 9 - SuaraGarut.ID",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBOUDMtYmV2NVVGYnJENGtQUF96NnFRMnNoMG5tUTlTUm5uSzRLemJ2MGM4VjVjY0ZRazQwa1N4V2x2Vjk3bnlTX2gxSmFLZ2hkZkhCM0NaSVpLYXBUMGVZbGV1ZUhVWGF3ZjhPQW4wQkNubFIxRWRHRg?oc=5",
@@ -57,13 +64,6 @@
       "title": "【National Day Golden Week】Macao registers 1.14 million visitor arrivals Single-day visitor arrivals reach all-time high for National Day holidays - MACAO GOVERNMENT TOURISM OFFICE - www.dst.gov.mo",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLWlDVmNtT3dhOWN2NjN0cGxIN0FYeXhsQi12REZvWXhqZWNTUDVnUmwzY1lMVDBNVUJIcVdCM3l1djRnbTl1Yy1Fak9HNG1NWkp4MzRLVkQyZW9COHFEMEtQSUF2bGgwbUUwY2EzZ2NSSzVWNmZQeDFDa0V0RVFvOFgtWHpxdGFOOVktcDdzNA?oc=5",
       "source": "Google News · Macau travel coverage",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "Concrete Songs and Other Stories",
-      "url": "http://www.icm.gov.mo/en/events/detail/11890",
-      "source": "Cultural Affairs Bureau · events",
       "kind": "RSS headline"
     },
     {
@@ -126,20 +126,6 @@
       "date": "2026-09-30",
       "title": "Macao, Hainan explore multi-stop travel itineraries - Macau Business",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb3ZIR25KY216S0lwZHhTbDNBRUtxMjg1VDZMUE5iQUlfbXBtSVoyYUtfRkR0c2QyU25vLWJYT1lSdjM1TWhtOEU1Q0Q4d2hwbDNhSlI1LWo3N3V4VWx4cmRYR2tReU5VWE5nb3lIV1cyN2Q5NGNfR0dwdDZ5d0VTNDhpdw?oc=5",
-      "source": "Google News · Macau travel coverage",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "【National Day Golden Week】MGTO rolls out active preparations to ensure service quality and show dynamic destination appeal - MACAO GOVERNMENT TOURISM OFFICE - www.dst.gov.mo",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOG12SENabUpPWkZoem5VOWdCZTRrVHRIMlJScDBNRUVTSk96UkY3Wkp4c1BGMFpOZjRMNHBDQ0JaX1RzR1ozRnB1WmRKQnB4UTJjV1ZsSkFQZm90dER5RWdTbDJkZjRzdU1PclY2UThmRl92eWVkX21tZUx4X3JOUzdVWVhVbVdVYjR2alhKZw?oc=5",
-      "source": "Google News · Macau travel coverage",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "Macau authorities expect 5.4 million border crossings during seven day National Day Golden Week holiday - IAG – Inside Asian Gaming",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOM1BsS0VtUmdmeUtzNDBmVHVVWE1qcEJqa3lyZnV0UmhqanJYWGxVRUZSNVhkWTRVczkyelh6VGI0MUliN0JiRWR0eEt1TGs0bW8tQUhXeG5nc2tCcWh6SFFBMk5rZXdtbmZDbURlLUdEdWloOG5SMzZvWk1rbE14dl82SzNWbXZKOHYwUU03VmF3OS0xSXNMMHpabm10RlhkcW1pbTBqSW9XMGN2TUdyZmtmaDZES050UFBZZm5FU2RuYklnU0FmYXozaGZpdw?oc=5",
       "source": "Google News · Macau travel coverage",
       "kind": "RSS headline"
     },
