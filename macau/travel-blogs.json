@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-14T17:16:48+00:00",
-  "lastAttemptAt": "2026-10-14T17:16:48+00:00",
+  "updatedAt": "2026-10-14T21:45:31+00:00",
+  "lastAttemptAt": "2026-10-14T21:45:31+00:00",
   "sourceCount": 4,
   "items": [
     {
@@ -8,6 +8,15 @@
       "title": "【Vigorous Marketing】Spanish Confederation of Travel Agents designates Macao as Preferred Destination 2027 - 澳門特別行政區政府入口網站",
       "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBhOEliNkxpa0dZQS04VjZUbVpELW54d0huWW1Zc1lnWFlpVEdJZlNYU2gwODM3VXlUaXc4alFRR1AtQThLVjNmRmd3?oc=5",
       "source": "澳門特別行政區政府入口網站",
+      "category": "Independent travel guides",
+      "sourceType": "Google News indexed link",
+      "verifiedFirsthand": false
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Spanish travel agents name Macau ‘Preferred Destination 2027’ - The Macau Post Daily",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5nMFM4V3dfYzNtX0QwRE9BblhwZ0JaNWRTem11QjJ3R2ZPS2hfS05BRWhab1ptVmpXcHNKWTVtNlRUOVdwTGRIajJBX1c5VTlLb28w?oc=5",
+      "source": "The Macau Post Daily",
       "category": "Independent travel guides",
       "sourceType": "Google News indexed link",
       "verifiedFirsthand": false
