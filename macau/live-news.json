@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-15T17:05:55+00:00",
-  "lastAttemptAt": "2026-10-15T17:05:55+00:00",
+  "updatedAt": "2026-10-15T21:27:47+00:00",
+  "lastAttemptAt": "2026-10-15T21:27:47+00:00",
   "sourceCount": 5,
   "items": [
     {
@@ -49,6 +49,13 @@
       "date": "2026-10-15",
       "title": "PATA Chairman Shares Insights on the Future of Tourism at UTM – Macao SAR Government Portal - 澳門特別行政區政府入口網站",
       "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE16QmNhbm9vMXJaS29JWTNrQ0NONElERktfVHowakxWMFJxVUdUd1BZWDNxS09tU0FwcXBuTWJqSmxhakt6QllEbEFB?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Global Tourism Economy Forum 2026 brings international tourism leaders to Macao - Travel Daily News Asia-Pacific",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPY0wyU3JOa21LZ0dQLWtGUUNtQ2ZlMUtwRVRSUk1GbmFPM1VUc3VwSEMxb2Fxc0dqQmo4T2hPbmc2eUF6cFg4UXNBUXdhcGM5NVRaRkE5UjdtUzJCMXhrRzlVc09fWmI1V1J4UV9SckVuTVNuNkRfQXU4OG1qUkd4c2RUY3R5Z0VPUEphdHNoaHVQVGc?oc=5",
       "source": "Google News · Macau travel coverage",
       "kind": "RSS headline"
     },
@@ -203,13 +210,6 @@
       "date": "2026-09-10",
       "title": "Orchestra Reimagined: wHiRlwiND",
       "url": "http://www.icm.gov.mo/en/events/detail/11931",
-      "source": "Cultural Affairs Bureau · events",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-04",
-      "title": "Charity Events",
-      "url": "http://www.icm.gov.mo/en/events/detail/11907",
       "source": "Cultural Affairs Bureau · events",
       "kind": "RSS headline"
     }
