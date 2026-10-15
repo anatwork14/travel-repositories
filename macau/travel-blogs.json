@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-10-15T04:47:45+00:00",
-  "lastAttemptAt": "2026-10-15T04:47:45+00:00",
-  "sourceCount": 4,
+  "lastAttemptAt": "2026-10-15T11:36:55+00:00",
+  "sourceCount": 0,
   "items": [
     {
       "date": "2026-10-14",
@@ -76,6 +76,11 @@
       "verifiedFirsthand": false
     }
   ],
-  "errors": [],
+  "errors": [
+    "Travel journals and trip stories (HTTPError)",
+    "Independent travel guides (HTTPError)",
+    "Food and on-the-ground experience (HTTPError)",
+    "Vietnamese travel writing (HTTPError)"
+  ],
   "notice": "Tự động phát hiện TIÊU ĐỀ + LINK qua Google News RSS, không phải bài viết gốc hoặc review đã xác minh. Nhấp liên kết để mở nguồn và tự đối chiếu tác giả/ngày viết. Reddit được mở trực tiếp, không scrape."
 }
