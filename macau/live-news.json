@@ -1,8 +1,36 @@
 {
-  "updatedAt": "2026-10-16T04:37:41+00:00",
-  "lastAttemptAt": "2026-10-16T04:37:41+00:00",
+  "updatedAt": "2026-10-16T11:30:27+00:00",
+  "lastAttemptAt": "2026-10-16T11:30:27+00:00",
   "sourceCount": 5,
   "items": [
+    {
+      "date": "2026-10-16",
+      "title": "29th Lusofonia Festival kicks off next week\nTraditional music and dance performances to be held in the city districts showcasing the charm of Sino-Lusophone cultural exchange",
+      "url": "http://www.icm.gov.mo/en/news/detail/25153",
+      "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Cultural Affairs Bureau organises the participation of the performing arts industry in the 2nd Hong Kong Performing Arts Expo exhibiting Macao artistic works on the international exchange platform",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JNMO8di",
+      "source": "Macao SAR Government · English news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "CE meets UN Tourism Secretary-General",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JOcJkkE",
+      "source": "Macao SAR Government · English news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Macao Union Medical Center announces medical service arrangements for compensatory rest day for the Chong Yeung Festival (Festival of Ancestors)",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JPqZwxi",
+      "source": "Macao SAR Government · English news",
+      "kind": "RSS headline"
+    },
     {
       "date": "2026-10-15",
       "title": "Registration for the “Chinese Culture and I—Exploring Macao’s History through Cultural Creativity” Competition closes on 30 October\n\nAward-winning works will be turned into products",
@@ -158,13 +186,6 @@
       "kind": "RSS headline"
     },
     {
-      "date": "2026-10-02",
-      "title": "Macau offers free shuttles, fireworks to draw visitors - The Standard (HK)",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeVhYellhVmxhU3NXa0dLeXRzaWpZUUtWVk5yeTd2Vk1pTlIwTWN2Sjh4Tmpjaml5T0Jra0NoWXVTVjFRTmhPUy1DT05nM2d0ZXBCZ29wZGgxMzdST0JSWnRPeDZ0Y3c2TWJwcDJjREpLdkxMRTRZYmRKQmlMVjk3VXpUdmtsc0NnY2poNEVjY1ZCUi1QWHg1QUcyWEtqYUd0V1JQNUthX0JpRkU?oc=5",
-      "source": "Google News · Macau travel coverage",
-      "kind": "RSS headline"
-    },
-    {
       "date": "2026-09-30",
       "title": "Grand Opening\nMy Grand View Garden – Yue Opera",
       "url": "http://www.icm.gov.mo/en/events/detail/11881",
@@ -189,27 +210,6 @@
       "date": "2026-09-25",
       "title": "'Where Culture Flourishes, Happiness Happens'\nPiano Around Town",
       "url": "http://www.icm.gov.mo/en/events/detail/11922",
-      "source": "Cultural Affairs Bureau · events",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-25",
-      "title": "'Where Culture Flourishes, Happiness Happens'\nStreet Eco-Percussion",
-      "url": "http://www.icm.gov.mo/en/events/detail/11920",
-      "source": "Cultural Affairs Bureau · events",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "Sailing Melodies Shining in Macao: Yip's Children's Choir Concert",
-      "url": "http://www.icm.gov.mo/en/events/detail/11929",
-      "source": "Cultural Affairs Bureau · events",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "Orchestra Reimagined: wHiRlwiND",
-      "url": "http://www.icm.gov.mo/en/events/detail/11931",
       "source": "Cultural Affairs Bureau · events",
       "kind": "RSS headline"
     }
