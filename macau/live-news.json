@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-16T16:43:37+00:00",
-  "lastAttemptAt": "2026-10-16T16:43:37+00:00",
+  "updatedAt": "2026-10-16T21:16:04+00:00",
+  "lastAttemptAt": "2026-10-16T21:16:04+00:00",
   "sourceCount": 5,
   "items": [
     {
@@ -35,6 +35,13 @@
       "date": "2026-10-16",
       "title": "Macao forum: Tourism positioned to fuel resilient growth - chinadailyhk",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LRDVjcGVGaWhfanVZWEM4N2YwMmctNGVMczZfNS0wZ2t4WmlGbk5CczBrYlFRcFNaeWpEanBNUXZlZFVFR1N1QXp5ZU9GQUR2U0pkUlJINGI?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Macao forum: Tourism positioned to fuel resilient growth - The Macau Post Daily",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBCVzVTZ0szTm02bS04RkFlVTFENFRiTWc2eFBQMXZJaVNLV1BST2RZSzhYeVJkOG5VODM3ZGpxeVZSZTc5QnZtQnFicmNaV1lfV0Iw?oc=5",
       "source": "Google News · Macau travel coverage",
       "kind": "RSS headline"
     },
@@ -203,13 +210,6 @@
       "date": "2026-09-14",
       "title": "Sailing Melodies Shining in Macao: Yip's Children's Choir Concert",
       "url": "http://www.icm.gov.mo/en/events/detail/11929",
-      "source": "Cultural Affairs Bureau · events",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "Orchestra Reimagined: wHiRlwiND",
-      "url": "http://www.icm.gov.mo/en/events/detail/11931",
       "source": "Cultural Affairs Bureau · events",
       "kind": "RSS headline"
     }
