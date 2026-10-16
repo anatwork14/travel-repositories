@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-16T11:30:27+00:00",
-  "lastAttemptAt": "2026-10-16T11:30:27+00:00",
+  "updatedAt": "2026-10-16T16:43:37+00:00",
+  "lastAttemptAt": "2026-10-16T16:43:37+00:00",
   "sourceCount": 5,
   "items": [
     {
@@ -32,6 +32,13 @@
       "kind": "RSS headline"
     },
     {
+      "date": "2026-10-16",
+      "title": "Macao forum: Tourism positioned to fuel resilient growth - chinadailyhk",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LRDVjcGVGaWhfanVZWEM4N2YwMmctNGVMczZfNS0wZ2t4WmlGbk5CczBrYlFRcFNaeWpEanBNUXZlZFVFR1N1QXp5ZU9GQUR2U0pkUlJINGI?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
       "date": "2026-10-15",
       "title": "Registration for the “Chinese Culture and I—Exploring Macao’s History through Cultural Creativity” Competition closes on 30 October\n\nAward-winning works will be turned into products",
       "url": "http://www.icm.gov.mo/en/news/detail/25146",
@@ -40,43 +47,8 @@
     },
     {
       "date": "2026-10-15",
-      "title": "PATA Chairman Shares Insights on the Future of Tourism at UTM",
-      "url": "https://www.gcs.gov.mo/detail/en/N26JODY5uG",
-      "source": "Macao SAR Government · English news",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Macao Orchestra presents the concert “Rophé and Skride Perform 20th-century Masterpieces” featuring internationally acclaimed musicians",
-      "url": "https://www.gcs.gov.mo/detail/en/N26JGSD3KC",
-      "source": "Macao SAR Government · English news",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Guia Hill Cable Car to be temporarily closed from next Tuesday for annual safety check",
-      "url": "https://www.gcs.gov.mo/detail/en/N26JOMyPZV",
-      "source": "Macao SAR Government · English news",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "October Contribution Month – Social Security Fund Calls for Electronic Payments",
-      "url": "https://www.gcs.gov.mo/detail/en/N26JOcNQWl",
-      "source": "Macao SAR Government · English news",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-15",
       "title": "12th Global Tourism Economy Forum Macao 2026 announces key speakers and agenda highlights - TTG Asia",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM0p5d0NobU9aUks5R0U5MWN1TnZTUmVWem5zbEJnSzhlTVRlVUxvMU1VOFlMdkI1VG55R2dIVDV2VkdvMnBtRlBuTG5La0NIRXdpMHRfOFZSTjBkd3JLZ3Y1OThBaUcwWVFZazVZMlhMRmxpeHJkTmdMdFV3X2djQlRFM1JsQmRnS212YnVrTXRDbXJnUE9JVERZWWpTUGF2NXhoTjUtenR5LU9LQU1RNnFUaTROYjBpZlIyaDlELUJIODA?oc=5",
-      "source": "Google News · Macau travel coverage",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "PATA Chairman Shares Insights on the Future of Tourism at UTM – Macao SAR Government Portal - 澳門特別行政區政府入口網站",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE16QmNhbm9vMXJaS29JWTNrQ0NONElERktfVHowakxWMFJxVUdUd1BZWDNxS09tU0FwcXBuTWJqSmxhakt6QllEbEFB?oc=5",
       "source": "Google News · Macau travel coverage",
       "kind": "RSS headline"
     },
@@ -151,6 +123,13 @@
       "kind": "RSS headline"
     },
     {
+      "date": "2026-10-07",
+      "title": "Macao Orchestra presents the concert “Rophé and Skride Perform 20th-century Masterpieces” featuring internationally acclaimed musicians",
+      "url": "http://www.icm.gov.mo/en/news/detail/25148",
+      "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
       "date": "2026-10-06",
       "title": "Brazilian Body Beats",
       "url": "http://www.icm.gov.mo/en/events/detail/11888",
@@ -210,6 +189,27 @@
       "date": "2026-09-25",
       "title": "'Where Culture Flourishes, Happiness Happens'\nPiano Around Town",
       "url": "http://www.icm.gov.mo/en/events/detail/11922",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "'Where Culture Flourishes, Happiness Happens'\nStreet Eco-Percussion",
+      "url": "http://www.icm.gov.mo/en/events/detail/11920",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Sailing Melodies Shining in Macao: Yip's Children's Choir Concert",
+      "url": "http://www.icm.gov.mo/en/events/detail/11929",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Orchestra Reimagined: wHiRlwiND",
+      "url": "http://www.icm.gov.mo/en/events/detail/11931",
       "source": "Cultural Affairs Bureau · events",
       "kind": "RSS headline"
     }
