@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-16T23:38:41+00:00",
-  "lastAttemptAt": "2026-10-16T23:38:41+00:00",
+  "updatedAt": "2026-10-17T04:34:25+00:00",
+  "lastAttemptAt": "2026-10-17T04:34:25+00:00",
   "sourceCount": 5,
   "items": [
     {
@@ -8,6 +8,13 @@
       "title": "29th Lusofonia Festival kicks off next week\nTraditional music and dance performances to be held in the city districts showcasing the charm of Sino-Lusophone cultural exchange",
       "url": "http://www.icm.gov.mo/en/news/detail/25153",
       "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "CE urges Global Tourism Economy Forum to promote innovation and the sustainability of global tourism",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JPLXQzC",
+      "source": "Macao SAR Government · English news",
       "kind": "RSS headline"
     },
     {
@@ -203,13 +210,6 @@
       "date": "2026-09-25",
       "title": "'Where Culture Flourishes, Happiness Happens'\nStreet Eco-Percussion",
       "url": "http://www.icm.gov.mo/en/events/detail/11920",
-      "source": "Cultural Affairs Bureau · events",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "Sailing Melodies Shining in Macao: Yip's Children's Choir Concert",
-      "url": "http://www.icm.gov.mo/en/events/detail/11929",
       "source": "Cultural Affairs Bureau · events",
       "kind": "RSS headline"
     }
