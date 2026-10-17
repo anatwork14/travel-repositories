@@ -1,8 +1,22 @@
 {
-  "updatedAt": "2026-10-17T10:50:29+00:00",
-  "lastAttemptAt": "2026-10-17T10:50:29+00:00",
+  "updatedAt": "2026-10-17T15:39:50+00:00",
+  "lastAttemptAt": "2026-10-17T15:39:50+00:00",
   "sourceCount": 5,
   "items": [
+    {
+      "date": "2026-10-17",
+      "title": "12th Global Tourism Economy Forum · Macao 2026 grandly opens",
+      "url": "https://www.gcs.gov.mo/detail/en/N26JP4mYfK",
+      "source": "Macao SAR Government · English news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-17",
+      "title": "12th Global Tourism Economy Forum · Macao 2026 grandly opens – Macao SAR Government Portal - 澳門特別行政區政府入口網站",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZEhGS19scmV1NkNtM3lFaTVERjNxV3lENjY1NjZiUXBxaFlsVlNYVDNReTlWUEx4eXBMQjY0RThFWlRHdmNOY2h0MGc0Yzd5X0tYREF4NzUzMFBNRHFzYXM0ZUVrUllpczVQbWtuQl9kMUp1eWtCRUgzakRYTXJVMWt6VWtHWEdsQ3FKaVpUbEhyVm5iNFY0Uw?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
     {
       "date": "2026-10-16",
       "title": "29th Lusofonia Festival kicks off next week\nTraditional music and dance performances to be held in the city districts showcasing the charm of Sino-Lusophone cultural exchange",
@@ -36,13 +50,6 @@
       "title": "Macao Union Medical Center announces medical service arrangements for compensatory rest day for the Chong Yeung Festival (Festival of Ancestors)",
       "url": "https://www.gcs.gov.mo/detail/en/N26JPqZwxi",
       "source": "Macao SAR Government · English news",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Macao forum: Tourism positioned to fuel resilient growth - chinadailyhk",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LRDVjcGVGaWhfanVZWEM4N2YwMmctNGVMczZfNS0wZ2t4WmlGbk5CczBrYlFRcFNaeWpEanBNUXZlZFVFR1N1QXp5ZU9GQUR2U0pkUlJINGI?oc=5",
-      "source": "Google News · Macau travel coverage",
       "kind": "RSS headline"
     },
     {
@@ -123,6 +130,13 @@
       "kind": "RSS headline"
     },
     {
+      "date": "2026-10-09",
+      "title": "Macao Sets National Day Tourism Records on October 9 - SuaraGarut.ID",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBOUDMtYmV2NVVGYnJENGtQUF96NnFRMnNoMG5tUTlTUm5uSzRLemJ2MGM4VjVjY0ZRazQwa1N4V2x2Vjk3bnlTX2gxSmFLZ2hkZkhCM0NaSVpLYXBUMGVZbGV1ZUhVWGF3ZjhPQW4wQkNubFIxRWRHRg?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
       "date": "2026-10-08",
       "title": "“hush! Beach Concerts x Urban Sports Wellfest 2026” creates a new cultural and tourism experience in music and sports for youth in November",
       "url": "http://www.icm.gov.mo/en/news/detail/25132",
@@ -196,20 +210,6 @@
       "date": "2026-09-25",
       "title": "Lang Lang – Beyond Boundaries Series\nPiano Camp",
       "url": "http://www.icm.gov.mo/en/events/detail/11913",
-      "source": "Cultural Affairs Bureau · events",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-25",
-      "title": "'Where Culture Flourishes, Happiness Happens'\nPiano Around Town",
-      "url": "http://www.icm.gov.mo/en/events/detail/11922",
-      "source": "Cultural Affairs Bureau · events",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-09-25",
-      "title": "'Where Culture Flourishes, Happiness Happens'\nStreet Eco-Percussion",
-      "url": "http://www.icm.gov.mo/en/events/detail/11920",
       "source": "Cultural Affairs Bureau · events",
       "kind": "RSS headline"
     }
