@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-20T19:19:26+00:00",
-  "lastAttemptAt": "2026-10-20T19:19:26+00:00",
+  "updatedAt": "2026-10-20T23:56:03+00:00",
+  "lastAttemptAt": "2026-10-20T23:56:03+00:00",
   "sourceCount": 5,
   "items": [
     {
@@ -35,13 +35,6 @@
       "date": "2026-10-19",
       "title": "UN Tourism highlights global travel growth at Macao forum - TTG Asia",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZndKY1k3VmhZMG1OSWo5QVRKWXZEcXB4cWVtUkRtT1ROc3JyR2ZSZ3JKRExPXzY5MWNLczdOUEhqUHdHRkRoTm11LVllZVlLSnJ2Nk9abEFCSEJvZkRleFYwNTVEcy11ZE54X0ROdG1GcWxnN0ZqdGlfa05jeU9pR2hReDBBV3pWVEpwakhINFBMZU1fdDAtYw?oc=5",
-      "source": "Google News · Macau travel coverage",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-19",
-      "title": "Macao tourism forum hailed a success as agreements signed - chinadailyhk",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1zRlpLSTdjZy1VTURJbGdpelhBMnFTbGxuQ0hrN1hLWGNCZXgyR01FcXctSm1rbXNNX2cwVkhBLU9aR2RoLWVlVXlaNml3aUN4bzMzUV84Z0E?oc=5",
       "source": "Google News · Macau travel coverage",
       "kind": "RSS headline"
     },
@@ -210,6 +203,13 @@
       "date": "2026-10-06",
       "title": "Cultural Affairs Bureau continues to promote various reading activities in the community",
       "url": "http://www.icm.gov.mo/en/news/detail/25122",
+      "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "38th Macao International Music Festival grandly inaugurated",
+      "url": "http://www.icm.gov.mo/en/news/detail/25117",
       "source": "Cultural Affairs Bureau · news",
       "kind": "RSS headline"
     }
