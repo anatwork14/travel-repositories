@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-20T23:56:03+00:00",
-  "lastAttemptAt": "2026-10-20T23:56:03+00:00",
+  "updatedAt": "2026-10-21T04:55:54+00:00",
+  "lastAttemptAt": "2026-10-21T04:55:54+00:00",
   "sourceCount": 5,
   "items": [
     {
@@ -186,6 +186,13 @@
       "kind": "RSS headline"
     },
     {
+      "date": "2026-10-07",
+      "title": "Sands Resorts Macao wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia - macau daily times 澳門每日時報",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWGRrQTIwY1h4M2RqUVBncm9nenhNSHNlNlFSVzBpbkVrLWk2VUVwdDlKaHQ1NHR2SUxnaHBzNlp2aFJCME8zN3lXUUlfSW9RcDR4ck5kSmItVkNCbTFCN0NEQ2tiMXNONWk2V2FyYzRzbkg1N3Ayc1RZWkZrOS0tWEJLRlZzSlpuYzRzbVI4UTBWdVI3QXd1UDV5eVBzNnZ3V3FBSlh1OFBIS3RMemJV?oc=5",
+      "source": "Google News · Macau travel coverage",
+      "kind": "RSS headline"
+    },
+    {
       "date": "2026-10-06",
       "title": "Brazilian Body Beats",
       "url": "http://www.icm.gov.mo/en/events/detail/11888",
@@ -203,13 +210,6 @@
       "date": "2026-10-06",
       "title": "Cultural Affairs Bureau continues to promote various reading activities in the community",
       "url": "http://www.icm.gov.mo/en/news/detail/25122",
-      "source": "Cultural Affairs Bureau · news",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-02",
-      "title": "38th Macao International Music Festival grandly inaugurated",
-      "url": "http://www.icm.gov.mo/en/news/detail/25117",
       "source": "Cultural Affairs Bureau · news",
       "kind": "RSS headline"
     }
