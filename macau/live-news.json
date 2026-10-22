@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-22T11:59:12+00:00",
-  "lastAttemptAt": "2026-10-22T11:59:12+00:00",
+  "updatedAt": "2026-10-22T17:15:09+00:00",
+  "lastAttemptAt": "2026-10-22T17:15:09+00:00",
   "sourceCount": 5,
   "items": [
     {
@@ -22,20 +22,6 @@
       "title": "“Stewart Sukuma Concert with the Macao Chinese Orchestra”\nopens a new chapter of the fusion of Chinese and Western music through cross-disciplinary resonance",
       "url": "http://www.icm.gov.mo/en/news/detail/25170",
       "source": "Cultural Affairs Bureau · news",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "12th Global Tourism Economy Forum · Macao 2026 culminates in success",
-      "url": "https://www.gcs.gov.mo/detail/en/N26JUNjhEm",
-      "source": "Macao SAR Government · English news",
-      "kind": "RSS headline"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "Melco Resorts & Entertainment and Macao University of Tourism Development Foundation Held Donation Agreement Signing Ceremony",
-      "url": "https://www.gcs.gov.mo/detail/en/N26JU2viLu",
-      "source": "Macao SAR Government · English news",
       "kind": "RSS headline"
     },
     {
@@ -210,6 +196,20 @@
       "date": "2026-10-07",
       "title": "Concrete Songs and Other Stories",
       "url": "http://www.icm.gov.mo/en/events/detail/11890",
+      "source": "Cultural Affairs Bureau · events",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Macao Orchestra presents the concert “Rophé and Skride Perform 20th-century Masterpieces” featuring internationally acclaimed musicians",
+      "url": "http://www.icm.gov.mo/en/news/detail/25148",
+      "source": "Cultural Affairs Bureau · news",
+      "kind": "RSS headline"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Brazilian Body Beats",
+      "url": "http://www.icm.gov.mo/en/events/detail/11888",
       "source": "Cultural Affairs Bureau · events",
       "kind": "RSS headline"
     }
